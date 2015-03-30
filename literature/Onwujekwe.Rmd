@@ -1,0 +1,49 @@
+---
+title: "Onwujekwe et al. Increasing coverage of insecticide-treated nets in rural Nigeria"
+author: "Reading Notes      |     Joe Brew"
+date: 
+output: rmarkdown::tufte_handout
+nocite: | 
+  @Onwujekwe2005
+bibliography: bibliography.bib
+---
+
+# Overview
+
+An old\marginnote{2005} article assessing how residents of a hyper-endemic malarial region valued and used malaria-preventive tools at the household level. The study used focus groups and the setting was Enugu state (Nigeria)\marginnote{Southeast region}.
+
+# Introduction
+
+**Background**: At the time, many countries not achieving 60% ITNs coverage.\marginnote{What is ITN's coverage like now?} ITN's are important because (1) malaria is the number one public health problem in Nigeria and (2) prevention decreases burden on health system.  
+
+**Distribution** of ITN's is challenging.  Previously, public helath care system and private distribution networks resulted in low coverage.  Now, trying with community-based distribution.\marginnote{Authors imply that community-based and social networking go hand-in-hand} No one way is necessarily better - it depends on local circumstances.
+
+**Paper's focus:** perceptions, expenditures and preferences of consumers for prevention of malaria, ITN's ownership and distribution.  
+
+# Methods
+
+**Study details**: Conducted in 3 villages where _Anopheles gambiae_ is the major malaria vector and _Plasmodium falciparum_ causes >90% of cases. 3 FGD's in each village\marginnote{9 total focus groups}.  Discussion on malaria, prevention, net ownership, distribution and payment. Accompanying questionnaire administered to household representatives\marginnote{300 from each village, 900 total}. 
+
+# Results
+
+**Use**: Low mosquito net ownership and use.  Main constraint: lack of money.  Other issues: discomfort, safety concerns.
+
+**Distribution**: Community-based distribution preferrred to other options.  Concerns over commercial profit, and irregularity.  Door-to-door suggested, but concerns that the appearance will be that the government is trying to give them away (ie, they're not good).
+
+**Payment**: Consensus that single, full payment was best.  Price should be subsidized and identical for all.  
+
+**Survey results**: One quarter of houses spent money on malaria prevention, and average expenditure was $0.50 monthly.  Only 32% knew where to buy a net.  Only 11% had ever heard of an ITN.  
+
+# Discussion
+
+People were knowledgeable, but very few spent money.  Results similar to another study\marginnote{in Mozambique!} where only 3% of people had heard bout ITN's, and only 9% used nets at all.  Lack of expenditure suggests getting people to pay market price ($3.80) is unlikely.  
+
+Program managers need to be aware of local conditions, and make sure that payment plans used mixed modes (ie, one-off for those that can, and payment plans for those that cant)\marginnote{ensuring that anyone who wants a net gets one, regardless of ability to immediately pay}. "Consumer preferred distribution strategies" important to malaria control success. 
+
+# Terminology
+
+What follows is a list of important terms from the article:  
+**ITN**: Insecticide-treated nets.  
+**FGD**: Focus group discussion.
+
+# References
