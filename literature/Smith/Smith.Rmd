@@ -1,0 +1,50 @@
+---
+title: "Smith et al. Investigating preferences for mosquito-control technologies in Mozambique with latent class analysis"
+author: "Reading Notes      |     Joe Brew"
+date: 
+output: rmarkdown::tufte_handout
+nocite: | 
+  @Smith2011
+bibliography: bibliography.bib
+---
+
+# Overview
+Latent class analysis of Mozambicans' preferences for mosquito control.
+
+# Introduction
+
+People use (or don't use) mosquito control technology for a variety of reasons. Two important questions: "what do you users prefer" and "what attributes concern users enough to avoid technologies"?  Many approaches have been carried out to address these reasons (ie, size of mesh, color of net, etc.), but little has been done to investigate and cluster preferences.  Doing so can help in the eradication effort, particularly in the consideration of the "the costs and benefits of desgining technologies to meet varying preferences."
+
+# Methods
+
+Data collected from 271 people in five rural Mozambican villages\marginnote{Lione, Lucucho, Nhamane, Ntapo, Somba} via survey. Most villagers were subsistence farmers.  Interviews in Portuguese and local languages. LCA in SAS.  
+
+# Results
+
+A four-class model was determined to best fit the data.  Classes were:  
+- Multiple concerns (10%)  
+- By-products (16%)  
+- Bites (34%)  
+- No preferences (48%)  
+
+One can understand the above list as going in order from most difficult to easiest to market mosquito control technology to\marginnote{The latter 3 groups had increased odds of showing interest in trying new mosquito-control technologies}.    
+
+
+# Discussion
+
+Users' preferences varied, and people could be categorized into latent classes based on those preferences.  The most resistant (multiple concerns) class was also the smallest, and "one could wonder if it is worth the time and expense of trying to develp a technology to meet these preferences."  
+
+Access to mosquito control technology is generally difficult in Mozambique.  In government voucher program, only 68% of eligible households received a voucher. But of those that did, 90% redeemed it.       
+
+"One of the biggest concerns" of malaria elimination "is that elimination will not be possible if transmission is not prevented in the most isolated and marginalized communities."  Therefore, considering end-user preferences is of utmost importance.
+
+
+# Terminology
+
+What follows is a list of important terms from the article:  
+**LCA**: Latent class analysis.   
+**ITN**: Insecticide-treated net.  
+**LLA**: Late life acting. \marginnote{used in conjunction with insecticdes}  
+**IRS**: Indoor residual sprays.  
+
+# References
