@@ -1,0 +1,384 @@
+---
+title: "Protocol - Atlas of malaria control activities in Manhiça"
+latex_engine: xelatex
+output:
+  pdf_document:
+    includes:
+      header-includes: \usepackage{longtable}
+      in_header: style.sty
+    toc: yes
+  html_document: default
+tables: yes
+highlight: zenburn
+---
+
+
+
+```{r, echo=FALSE, comment=NA, message=FALSE, warning=FALSE} 
+#libraries
+library(ggmap)
+library(ggplot2)
+library(grid)
+library(dplyr)
+library(knitr)
+library(ggthemes)
+library (rgdal)
+library(RColorBrewer)
+opts_chunk$set(comment = NA, message = FALSE, echo = FALSE, results = 'hide', fig.height = 6, warning = FALSE, fig.width = 6)
+```
+
+```{r}
+suppressWarnings(library(xtable))
+options(xtable.comment = FALSE)
+```
+
+```{r}
+source('helpers.R')
+```
+
+# Introduction  
+
+There has been a great deal of academic work on the geospatial analysis of the incidence and prevalence of malaria. However, few projects have addressed the spatial components of malaria _prevention_ activity. The lack of geographic analyses relating to the disease's preventive components is a notable missing piece of the puzzle, as it has O ortant implications for malaria control and elimination.  
+
+# Objectives and context  
+
+## Primary objective  
+This project has one primary objective: to calculate and visualize area-specific rates of malaria control activities throughout the district of Manhiça.  
+
+## Secondary objectives  
+
+Secondary objectives include:  
+- Understand malaria prevention activity's temporal and spatial components through the application of geospatial smoothing/interpolation and time series analysis.    
+
+- Facilitate an understanding of the association between public health campaigns, malaria control behavior, and the incidence of malaria.  
+
+- Identify exemplary and underperforming areas of malaria prevention activity.  
+
+- Disseminate knowledge via both digital and printed media for use by other research, health care workes and policy-makers.  
+
+- Build an open-source software "toolkit" to enable both the future reporducibility of this atlas as well as to facilitate the production of similar projects elsewhere.  
+
+## Potential implications  
+
+In addition to its specific scientific objectives and knowledge products (above), this project has the potential to have important implications for public health.  These include:  
+
+- The opening of new pathways of research in epidemiology and economics, enabled by the standardization and accessibility of area- and time-specific malaria control data.  
+
+- Improved targeting of public health interventions and government allocation of resources, as a result of a better understanding of the behavioral components of malaria control campaigns.  
+
+- The establishment of historical "benchmarks" to gauge the effectiveness of both past and future malaria control campaigns.  
+
+- The validation of external data sources in regards to representative estimates (ie, USAID's DHS) versus direct counts (census).
+
+# Methods and approach  
+
+## Data  
+
+The datasets required for the carrying out of this project are:  
+
+- The Manhiça health district census data from 1996 to present
+
+- Spatial datasets from the GADM  
+
+## Methodology  
+
+### Analysis  
+
+In order to understand the spatial and temporal components of household-driven malaria control activities in Manhiça, we will conduct descriptive, model-based, and visualization-oriented analyses.
+
+- **Descriptive**: We will aggregate data into gridded areas at the most granular level possible (while remaining large enough to preserve anonymity) and calculate year-specific rates of each malaria control activity provided in the census (use of bed nets, etc.).  
+
+- **Model-based**: We will adjust the above rates for confounding demographic factors, specifically wealth, sex and age.  Additionally, we will generate estimates for areas with missing, incomplete or unreliable data using Krieging and multi-dimensional kernel density estimation (geospatial interpolation), so as to construct a unitary "surface" for the whole of the district.    
+
+- **Visualization**: In order to observe trends in both time and space, we will compile an "atlas" of household-driven malaria control activities, containing visualizations (maps and charts) specific to each malaria control activity, as well as composite "indices".  
+
+### Products  
+
+The products of this research project will be academic, informational, and computational:  
+
+- **Academic**: We will produce a research paper, for review and publication in an academic journal, and in partnership with those who carry out and direct the cesus in Manhiça, describing the methodology employed for spatial interpolation, and discussing its generalizability.  
+
+- **Informational**: We will produce, in both electronic (online) and printed (booklets) formats, the "Atlas of malaria control activity in Manhiça" (O atlas da actividade de control de malaria em Manhiça).  This will consist of maps and charts visualizing the last 20 yearsof malaria control activities in the district.  
+
+- **Computational**: In order to make our work accessible and efficiently reproducible, we will build an API which allows public health practitioners, clinicians and researchers to supply geographic coordinates, and programatically/automatically get a time-indexed "malaria control score" for that area. This will not only help guide clinical decision-making, it may also influence health promotion campaigns, and should help facilitate future research in the area.
+
+## Research team  
+
+- **Elisa Sicuri** is a health economist and assistant research professor at ISGlobal.  Her research focuses on the economic dimensions of infectious disease, specifically malaria.  She has ample work experience in Manhiça.
+
+- **Joe Brew** is an epidemiologist and statistician.  He is carrying out his PhD in Transdisciplinary Global Health at ISGlobal.   
+
+# Ethical considerations  
+
+Ths project relies exclusively on retrospective data.  Though identifiable in its raw form, the analysis will deal entirely in its non-identifiable components.  All analysis will be at the aggregate level.  Accordingly, informed consent is not necessary.  
+
+# Appendix  
+
+## Examples of product  
+
+The following maps and charts are intended to show examples of the kinds of visualizations which will eventually constitute the body of the atlast.  These use entirely fake data.  
+
+```{r}
+library(raster)
+# Get map of mozambique
+moz <- getData('GADM', country = 'MOZ', level = 3)
+# Get map of manhica district
+man <- moz[moz$NAME_2 == 'Manhiça',]
+# Make some random points within man
+x <- bbox(man)
+xs <- sample(seq(x[1], x[3], length = 100000), 100000)
+ys <- sample(seq(x[2], x[4], length = 100000), 100000)
+random <- data.frame(x = xs,
+                     y = ys)
+coordinates(random) <- ~x+y
+# Widdle down those that aren't in man
+random <- SpatialPointsDataFrame(coords = coordinates(random),
+                                 data = data.frame(id = seq(1:100000)))
+proj4string(random) <- proj4string(man)
+random <- random[!is.na(over(random, polygons(man))),]
+# Give values to random's dataframe
+random$long <- coordinates(random)[,1]
+random$lat <- coordinates(random)[,2]
+
+# Get the specific localidade
+random@data$localidade <- man@data$NAME_3[over(random, polygons(man))]
+
+
+# First, assign a few hotspots
+hotspots <- random[sample(1:nrow(random), 10, replace = TRUE),]
+# Define whether a location is within x distance from a hotspot
+# in_hotspot <- rep(FALSE, nrow(random))
+hotspot_mat <- matrix(rep(NA), ncol = nrow(hotspots), nrow = nrow(random))
+for (i in 1:nrow(hotspots)){
+  temp <- spDistsN1(pts = random, pt = hotspots[i,])  
+  hotspot_mat[,i] <- temp
+  # in_hotspot[temp < 0.1] <- TRUE
+}
+# Add mean distance from hotspots to random
+random$mean_distance_from_hotspot <- apply(hotspot_mat, 1, mean)
+# Conditionally give more weight to those in hotspots
+random$coverage <- random@data$mean_distance_from_hotspot +
+  rnorm(n = nrow(random), mean = 0, sd = 0.05) + 0.2
+random$value <- as.numeric(random$coverage >= 0.5)
+# Add some arbitrary household sizes
+random$hh_size <- sample(1:15, nrow(random), replace = TRUE)
+
+# Get mean values from random into man
+man@data <- man@data %>%
+  mutate(localidade = NAME_3) %>%
+  left_join(random@data %>%
+  group_by(localidade) %>%
+  summarise(coverage = mean(coverage)))
+
+# Fortify objects
+man_fort <- fortify(man, region = 'NAME_3') %>%
+  mutate(localidade = id) %>%
+  left_join(man@data %>%
+              dplyr::select(localidade, coverage))
+
+
+
+```
+
+```{r}
+# RAW POINTS
+
+# Make map
+ggplot(man_fort,
+       aes(x = long, y = lat)) +
+  geom_polygon(aes(group = id), fill = 'grey') +
+  geom_point(data = random@data,
+             aes(x = long, y = lat, col = coverage), size = 0.5) +
+  coord_map() +
+  geom_polygon(aes(group = id), fill = NA, color = 'black') +
+  scale_colour_gradient(low = 'darkorange',
+                      # guide = guide_legend(reverse=TRUE), 
+                      name = 'Household bednet coverage') +
+  xlab('Longitude') +
+  ylab('Latitude') +
+  ggtitle('Example of raw data (not to be included in atlas)') +
+  theme_gg
+```
+
+```{r}
+# Localidade-scores
+
+ggplot(man_fort,
+       aes(x = long, y = lat)) +
+  geom_polygon(aes(group = id, fill = coverage)) +
+  coord_map() +
+  geom_polygon(aes(group = id), fill = NA, color = 'black') +
+  scale_fill_gradient(low = 'darkorange',
+                      # guide = guide_legend(reverse=TRUE), 
+                      name = 'Household bednet coverage') +
+  xlab('Longitude') +
+  ylab('Latitude') +
+  ggtitle('Example of aggregated (locality-specific) map') +
+  theme_gg
+```
+
+```{r}
+# Localidade time series
+localidades <- unique(sort(man$NAME_3))
+years <- seq(1996, 2015, 1)
+df <- expand.grid(localidade = localidades,
+                 year = years)
+df$bednet <- c(sample(30:70, length(localidades)),
+               rep(NA, nrow(df) - length(localidades)))
+for (i in (length(localidades) + 1):nrow(df)){
+  previous <- df$bednet[df$localidade == df$localidade[i]][1]
+  df$bednet[i] <- previous +
+    sample(rnorm(n = 1000, mean = 0, sd = 3), 1) +
+    sample(c(rep(0, 20), c(-4, 6)), 1)
+}
+ggplot(data = df,
+       aes(x = year, y = bednet)) +
+  geom_point(col = 'darkorange') +
+  geom_smooth(fill = 'lightblue') +
+  facet_wrap(~ localidade, nrow = 4) +
+  theme_gg +
+  xlab('Year') +
+  ylab('Household bednet coverage') +
+  ggtitle('Example of locality-specific temporal malaria control chart')
+```
+
+```{r}
+# Control type time series
+control_types <- c('ACT', 'ITN', 'IRS', 'IPT')
+localidades <- unique(sort(man$NAME_3))
+years <- seq(1996, 2015, 1)
+df <- expand.grid(localidade = localidades,
+                 control_type = control_types,
+                 year = years)
+df$val <- c(sample(15:90, which(df$year != min(df$year))[1]),
+               rep(NA, nrow(df) - which(df$year != min(df$year))[1]))
+for (i in (length(localidades) + 1):nrow(df)){
+  previous <- df$val[df$localidade == df$localidade[i] &
+                       df$control_type == df$control_type[i]][1]
+  df$val[i] <- previous +
+    sample(rnorm(n = 1000, mean = 0, sd = 2), 1) +
+    sample(c(rep(0, 20), c(-2, 4)), 1)
+}
+
+ggplot(data = df,
+       aes(x = year, y = val, group = control_type, fill = control_type)) +
+  geom_point(alpha = 0.2) +
+  geom_smooth(alpha = 0.3) +
+  facet_wrap(~localidade, nrow = 4) +
+  theme_gg +
+  xlab('Year') +
+  ylab('Household malaria control rate') +
+  ggtitle('Example of locality- and method-specific malaria control chart') +
+    scale_fill_manual(values = brewer.pal(length(unique(df$control_type)),
+                                           'Spectral'),
+                      name = 'Control types')
+```
+
+
+```{r}
+# Satelite-based atlas map (for health care workers)
+if('tempmap.RData' %in% dir('/tmp')){
+  load('/tmp/tempmap.RData')
+} else {
+  temp <- get_map(location = coordinates(man)[1,],
+                maptype = 'satellite')
+save('temp', file = '/tmp/tempmap.RData')
+}
+
+uncovered <- random@data#[random@data$coverage < 0.47,]
+
+ggmap(temp) +
+      theme_gg +
+  stat_binhex(data = uncovered,
+              geom = 'hex',
+              aes(x = long, 
+                  y = lat,
+                  fill = ..density..),
+              alpha = 0.7) +
+  scale_fill_gradient(low = 'darkorange',
+                      high = 'darkblue',
+                      # guide = guide_legend(reverse=TRUE), 
+                      name = 'Bednet coverage') +
+  xlab('Longitude') +
+  ylab('Latitude') +
+  ggtitle('Satelite-based maps (full country gridding)')
+
+```
+
+```{r}
+# SATELITE MAPS FOR LOCALITIES
+
+ggmap(temp) +
+      theme_gg +
+  stat_binhex(data = uncovered,
+              geom = 'hex',
+              aes(x = long, 
+                  y = lat,
+                  fill = ..density..),
+              alpha = 0.7) +
+               facet_wrap(~localidade, nrow = 2) +
+  scale_fill_gradient(low = 'darkorange',
+                      high = 'darkblue',
+                      # guide = guide_legend(reverse=TRUE), 
+                      name = 'Bednet coverage') +
+  xlab('Longitude') +
+  ylab('Latitude') +
+  ggtitle('Satelite-based maps (locality-specific gridding)')
+
+```
+
+```{r}
+# Kernel density surfaces
+ggmap(temp) +
+        theme_gg +
+  stat_density2d(data = uncovered,
+                 aes(x = long,
+                     y = lat,
+                     fill = ..level..),
+                 geom = 'polygon') +
+                 # colour = class,
+                 # bins = 30,
+            facet_wrap(~localidade, nrow = 2) +
+  scale_fill_gradient(low = 'darkorange',
+                      high = 'darkblue',
+                      # guide = guide_legend(reverse=TRUE), 
+                      name = 'Household bednet coverage') +
+  xlab('Longitude') +
+  ylab('Latitude') +
+  ggtitle('Satelite-based maps (for CHWs)')
+```
+
+```{r}
+# Zoom ins
+# Satelite-based atlas map (for health care workers)
+if('tempmap2.RData' %in% dir('/tmp')){
+  load('/tmp/tempmap2.RData')
+} else {
+  temp <- get_map(location = c(32.81, -25.41),
+                maptype = 'roadmap', 
+                zoom = 14)
+  save('temp', file = '/tmp/tempmap2.RData')
+}
+
+# Subset data
+uncovered$keep <- ifelse(
+  uncovered$lat > -25.39 | uncovered$lat < -25.415 |
+    uncovered$long >32.815 | uncovered$long <32.8,
+  sample(c(TRUE, FALSE), 1, prob = c(0.8, 0.2)),
+         TRUE)
+uncovered <- uncovered[uncovered$keep,]
+
+ggmap(temp) +
+        theme_gg +
+  geom_point(data = uncovered,
+             aes(x = long,
+                 y = lat,
+                 color = coverage)) +
+  scale_colour_gradient(low = 'darkorange',
+                      high = 'darkblue',
+                      # guide = guide_legend(reverse=TRUE), 
+                      name = 'Household malaria control score') +
+  xlab('Longitude') +
+  ylab('Latitude') +
+  ggtitle('Small area satelite-based maps (for CHWs)')
+```
