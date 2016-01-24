@@ -1,5 +1,10 @@
 ---
 title: "Protocol - Manhiça atlas of health and wealth"
+author: 
+  - Charfudin Sacoor 
+  - Joe Brew
+  - Elisa Sicuri  
+  - Sergi Alonso
 latex_engine: xelatex
 output:
   pdf_document:
@@ -24,6 +29,7 @@ library(knitr)
 library(ggthemes)
 library (rgdal)
 library(RColorBrewer)
+library(maptools)
 opts_chunk$set(comment = NA, message = FALSE, echo = FALSE, results = 'hide', fig.height = 6, warning = FALSE, fig.width = 6)
 ```
 
@@ -128,14 +134,14 @@ moz <- getData('GADM', country = 'MOZ', level = 3)
 man <- moz[moz$NAME_2 == 'Manhiça',]
 # Make some random points within man
 x <- bbox(man)
-xs <- sample(seq(x[1], x[3], length = 100000), 100000)
-ys <- sample(seq(x[2], x[4], length = 100000), 100000)
+xs <- sample(seq(x[1], x[3], length = 100000), 10000)
+ys <- sample(seq(x[2], x[4], length = 100000), 10000)
 random <- data.frame(x = xs,
                      y = ys)
 coordinates(random) <- ~x+y
 # Widdle down those that aren't in man
 random <- SpatialPointsDataFrame(coords = coordinates(random),
-                                 data = data.frame(id = seq(1:100000)))
+                                 data = data.frame(id = seq(1:10000)))
 proj4string(random) <- proj4string(man)
 random <- random[!is.na(over(random, polygons(man))),]
 # Give values to random's dataframe
@@ -144,7 +150,6 @@ random$lat <- coordinates(random)[,2]
 
 # Get the specific localidade
 random@data$localidade <- man@data$NAME_3[over(random, polygons(man))]
-
 
 # First, assign a few hotspots
 hotspots <- random[sample(1:nrow(random), 10, replace = TRUE),]
@@ -284,19 +289,25 @@ if('tempmap.RData' %in% dir('/tmp')){
 } else {
   temp <- get_map(location = coordinates(man)[1,],
                 maptype = 'satellite')
-save('temp', file = '/tmp/tempmap.RData')
+  save('temp', file = '/tmp/tempmap.RData')
 }
+
+```
+
+```{r}
 
 uncovered <- random@data#[random@data$coverage < 0.47,]
 
 ggmap(temp) +
-      theme_gg +
+  coord_cartesian() +
   stat_binhex(data = uncovered,
               geom = 'hex',
               aes(x = long, 
                   y = lat,
                   fill = ..density..),
               alpha = 0.7) +
+  # coord_map() +
+        theme_gg +
   scale_fill_gradient(low = 'darkorange',
                       high = 'darkblue',
                       # guide = guide_legend(reverse=TRUE), 
@@ -312,6 +323,7 @@ ggmap(temp) +
 
 ggmap(temp) +
       theme_gg +
+    coord_cartesian() +
   stat_binhex(data = uncovered,
               geom = 'hex',
               aes(x = long, 
@@ -333,6 +345,7 @@ ggmap(temp) +
 # Kernel density surfaces
 ggmap(temp) +
         theme_gg +
+    coord_cartesian() +
   stat_density2d(data = uncovered,
                  aes(x = long,
                      y = lat,
