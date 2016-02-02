@@ -1,0 +1,431 @@
+---
+title: "Protocol - Malaria control interventions: a discrete choice experiment for measuring community preference"
+author: 
+  - Joe Brew
+  - Elisa Sicuri  
+  - Charfudin Sacoor 
+  - Alberto García-Basteiro
+  - Celine Aerts
+latex_engine: xelatex
+output:
+  pdf_document:
+    includes:
+      header-includes: \usepackage{longtable}
+      in_header: style.sty
+    toc: yes
+  html_document: default
+tables: yes
+highlight: zenburn
+---
+
+
+
+
+```{r, echo=FALSE, comment=NA, message=FALSE, warning=FALSE} 
+#libraries
+library(ggmap)
+library(ggplot2)
+library(grid)
+library(dplyr)
+library(knitr)
+library(ggthemes)
+library (rgdal)
+library(RColorBrewer)
+library(maptools)
+opts_chunk$set(comment = NA, message = FALSE, echo = FALSE, results = 'hide', fig.height = 6, warning = FALSE, fig.width = 6)
+```
+
+```{r}
+suppressWarnings(library(xtable))
+options(xtable.comment = FALSE)
+```
+
+```{r}
+source('helpers.R')
+```
+
+# Introduction  
+
+In public health, the difference between and intervention's efficacy and effectiveness can often be explained in large part due to a community's aversion or receptiveness to the treatment being offered. In the struggle against malaria, a great deal of academic attention has focused on the _biological_, _medical_, and _logistical_ feasibility of various vector control and malaria treatment approaches.  However, there is a lack of attention towards a corresponding _acceptability_ of these approaches. To the extent that the elimination of malaria will be contingent on a massive "scaling up" of interventions, understanding preferences regarding malaria control is an essential piece of the eradication puzzle.  
+
+# Objectives and context  
+
+## Primary objective   
+This project has one primary objective: to understand community preferences, acceptance and aversion to malaria control approaches in the district of Manhiça, Mozambique. 
+
+## Secondary objectives  
+
+Secondary objectives include:    
+
+- Quantify community preferences through a discrete choice methodology.
+- Qualify community preferences through one-on-one interviews and guided focus groups of major stakeholders and key demographics.
+- Understand the temporal and spatial components of community malaria control preferences.
+- Account for the social and demographic confounders to preferences, and predict the impact that the demographic and epidemiologic transitions will have on malaria control preferences.
+- Relate preferences to their underlying economic costs, so as to inform public health practice.
+- Disseminate knowledge via both digital and printed media for use by other research, health care workes and policy-makers, as well as the communities from which the data came.
+- Build an open-source software "toolkit" to enable both the future reporducibility of this approach, and to facilitate the production and enable "comparability" of similar projects elsewhere.  
+
+## Potential implications  
+
+In addition to its specific scientific objectives and knowledge products (above), this project has the potential to have important implications for public health.  These include:  
+
+- Improved targeting of public health interventions and government allocation of resources, as a result of a better understanding of the behavioral and social components of disease control campaigns.
+- The establishment of historical "benchmarks" to gauge the effectiveness of public health education campaigns (ie, their effect on community preferences).
+
+
+
+# Methods and approach  
+
+## Data  
+
+The preliminary datasets required for the carrying out of this project are:  
+
+- The Manhiça health district census data from 1996 to present
+- Spatial datasets from the GADM (open access / already obtained)
+
+Using the above two sources to guide sampling and outreach, the researchers will generate two datasets specific to this project:  
+
+- Discrete choice questionnaire responses
+- Malaria control interviews / guided focus group discussion transcripts  
+
+## Methodology  
+
+### Data collection     
+
+#### Quantitative  
+
+Using the Manhiça health district census, a sample of 250 households will be enumerated.  From each of those households, all adults will (18+ years of age) will be invited (in-person) to participate in the questionnaire (quantitative) portion of the study. The questionnaire will be entirely in the form of discrete choices, a methodology which has the advantage of parsing ranked preference and explicitly quantifying preference through implicit trae-offs.  The World Bank has suggested that discrete choice experiments are "extremely useful for policymakers", which is of particular relevance to the malaria eradication campaign.  
+
+(ELISA ADD STUFF HERE)
+
+**Informed consent** will be obtained from all potential participants prior to the administration of the questionnaire.  Participants will have the option to complete the questionnaire on-site (at their home) or at the CISM. In both cases, there will be an option to complete the questionnaire in either written or oral format (the latter being for those who cannot or prefer not to write/read).  
+
+Data obtained from the questionnaire will be digitized and then destroyed.  The only identifiers will be the household and person numbers (which are linkable via the census).  These data will only be available to the researchers named in this study.  
+
+
+The entire questionnaire is availabe in the appendix.  
+
+#### Qualitative  
+
+In order to complement the quantitative (above) approach, one-on-one interviews and guided focus group discussions will also be administered.  One-on-one interviews will be offered to all questionnaire participants on-site (at the participant's home).  Guided focus group discussions will take place at the CISM on 5 different days:  
+
+- June 14: general public
+- June 17: women only
+- June 19: general public
+- June 22: men only
+- June 25: "avós" (55+ years old)
+
+All questionnaire participants will be invited to join the above discussions.  The gender- and age-specific groups are meant to highlight any issues specific to those within those groups.  
+
+In the case of both the interviews and the focus groups, in addition to informed consent, a request to digitally record the conversations will be made.  If granted by participants, the researchers will record the conversation; if not, notes will be taken.    
+Both the interview and the guided focus groups will be semi-structured.  The basic guidelines and question-flow are available in the appendix.  
+
+
+
+
+### Data analysis  
+
+#### Quantitative  
+
+The discrete choice survey will be analyzed using logistic regression.  The results of this analysis will suggest not only which malaria control methods are most preferred, but will also quantify the differences between preferences, allowing for integration into economic and simulation models.  
+
+## Research team  
+
+Details on members of the research team are available at [www.economicsofmalaria.com](www.economicsofmalaria.com).   
+
+
+# Appendix  
+
+
+
+## Questionnaires  
+
+### Discrete choice survey 
+
+(Full text goes here)  
+
+### One-on-one interview question guide  
+
+(Full text goes here)  
+
+### Guided focus group discussion outline  
+
+(Full text goes here)  
+
+## Examples of product  
+
+The following maps and charts are intended to show examples of the kinds of visualizations which will eventually constitute the body of the atlast.  These use entirely fake data.  
+
+```{r}
+library(raster)
+# Get map of mozambique
+moz <- getData('GADM', country = 'MOZ', level = 3)
+# Get map of manhica district
+man <- moz[moz$NAME_2 == 'Manhiça',]
+# Make some random points within man
+x <- bbox(man)
+xs <- sample(seq(x[1], x[3], length = 100000), 10000)
+ys <- sample(seq(x[2], x[4], length = 100000), 10000)
+random <- data.frame(x = xs,
+                     y = ys)
+coordinates(random) <- ~x+y
+# Widdle down those that aren't in man
+random <- SpatialPointsDataFrame(coords = coordinates(random),
+                                 data = data.frame(id = seq(1:10000)))
+proj4string(random) <- proj4string(man)
+random <- random[!is.na(over(random, polygons(man))),]
+# Give values to random's dataframe
+random$long <- coordinates(random)[,1]
+random$lat <- coordinates(random)[,2]
+
+# Get the specific localidade
+random@data$localidade <- man@data$NAME_3[over(random, polygons(man))]
+
+# First, assign a few hotspots
+hotspots <- random[sample(1:nrow(random), 10, replace = TRUE),]
+# Define whether a location is within x distance from a hotspot
+# in_hotspot <- rep(FALSE, nrow(random))
+hotspot_mat <- matrix(rep(NA), ncol = nrow(hotspots), nrow = nrow(random))
+for (i in 1:nrow(hotspots)){
+  temp <- spDistsN1(pts = random, pt = hotspots[i,])  
+  hotspot_mat[,i] <- temp
+  # in_hotspot[temp < 0.1] <- TRUE
+}
+# Add mean distance from hotspots to random
+random$mean_distance_from_hotspot <- apply(hotspot_mat, 1, mean)
+# Conditionally give more weight to those in hotspots
+random$coverage <- random@data$mean_distance_from_hotspot +
+  rnorm(n = nrow(random), mean = 0, sd = 0.05) + 0.2
+random$value <- as.numeric(random$coverage >= 0.5)
+# Add some arbitrary household sizes
+random$hh_size <- sample(1:15, nrow(random), replace = TRUE)
+
+# Get mean values from random into man
+man@data <- man@data %>%
+  mutate(localidade = NAME_3) %>%
+  left_join(random@data %>%
+  group_by(localidade) %>%
+  summarise(coverage = mean(coverage)))
+
+# Fortify objects
+man_fort <- fortify(man, region = 'NAME_3') %>%
+  mutate(localidade = id) %>%
+  left_join(man@data %>%
+              dplyr::select(localidade, coverage))
+
+
+
+```
+
+```{r, eval = FALSE}
+# RAW POINTS
+# 
+# Make map
+ggplot(man_fort,
+       aes(x = long, y = lat)) +
+  geom_polygon(aes(group = id), fill = 'grey') +
+  geom_point(data = random@data,
+             aes(x = long, y = lat, col = coverage * 10), size = 0.35) +
+  coord_map() +
+  geom_polygon(aes(group = id), fill = NA, color = 'black') +
+  scale_colour_gradient(low = 'darkorange',
+                      # guide = guide_legend(reverse=TRUE), 
+                      name = 'Meticais') +
+  xlab('Longitude') +
+  ylab('Latitude') +
+  ggtitle('Example of results: perceived monetary value of IRR') +
+  theme_gg
+```
+
+```{r}
+# Localidade-scores
+
+ggplot(man_fort,
+       aes(x = long, y = lat)) +
+  geom_polygon(aes(group = id, fill = coverage * 10)) +
+  coord_map() +
+  geom_polygon(aes(group = id), fill = NA, color = 'black') +
+  scale_fill_gradient(low = 'darkorange',
+                      # guide = guide_legend(reverse=TRUE), 
+                      name = 'Vaccine aversion index') +
+  xlab('Longitude') +
+  ylab('Latitude') +
+  ggtitle('Example of results: vaccine receptivity') +
+  theme_gg
+```
+
+```{r, eval = FALSE}
+# Localidade time series
+localidades <- unique(sort(man$NAME_3))
+years <- seq(1996, 2015, 1)
+df <- expand.grid(localidade = localidades,
+                 year = years)
+df$bednet <- c(sample(30:70, length(localidades)),
+               rep(NA, nrow(df) - length(localidades)))
+for (i in (length(localidades) + 1):nrow(df)){
+  previous <- df$bednet[df$localidade == df$localidade[i]][1]
+  df$bednet[i] <- previous +
+    sample(rnorm(n = 1000, mean = 0, sd = 3), 1) +
+    sample(c(rep(0, 20), c(-4, 6)), 1)
+}
+ggplot(data = df,
+       aes(x = year, y = bednet)) +
+  geom_point(col = 'darkorange') +
+  geom_smooth(fill = 'lightblue') +
+  facet_wrap(~ localidade, nrow = 4) +
+  theme_gg +
+  xlab('Year') +
+  ylab('Net immigration indiex') +
+  ggtitle('Example of locality-specific temporal migration chart')
+```
+
+```{r, eval = FALSE}
+# Control type time series
+control_types <- c('Foreign', 'Capital', 'District', 'Unknown')
+localidades <- unique(sort(man$NAME_3))
+years <- seq(1996, 2015, 1)
+df <- expand.grid(localidade = localidades,
+                 control_type = control_types,
+                 year = years)
+df$val <- c(sample(15:90, which(df$year != min(df$year))[1]),
+               rep(NA, nrow(df) - which(df$year != min(df$year))[1]))
+for (i in (length(localidades) + 1):nrow(df)){
+  previous <- df$val[df$localidade == df$localidade[i] &
+                       df$control_type == df$control_type[i]][1]
+  df$val[i] <- previous +
+    sample(rnorm(n = 1000, mean = 0, sd = 2), 1) +
+    sample(c(rep(0, 20), c(-2, 4)), 1)
+}
+
+ggplot(data = df,
+       aes(x = year, y = val, group = control_type, fill = control_type)) +
+  geom_point(alpha = 0.2) +
+  geom_smooth(alpha = 0.3) +
+  facet_wrap(~localidade, nrow = 4) +
+  theme_gg +
+  xlab('Year') +
+  ylab('Net emigration index') +
+  ggtitle('Example of locality- and method-specific migration chart') +
+    scale_fill_manual(values = brewer.pal(length(unique(df$control_type)),
+                                           'Spectral'),
+                      name = 'Migration source')
+```
+
+
+```{r}
+# Satelite-based atlas map (for health care workers)
+if('tempmap.RData' %in% dir('/tmp')){
+  load('/tmp/tempmap.RData')
+} else {
+  temp <- get_map(location = coordinates(man)[1,],
+                maptype = 'satellite')
+  save('temp', file = '/tmp/tempmap.RData')
+}
+
+```
+
+```{r}
+
+uncovered <- random@data#[random@data$coverage < 0.47,]
+
+ggmap(temp) +
+  coord_cartesian() +
+  stat_binhex(data = uncovered,
+              geom = 'hex',
+              aes(x = long, 
+                  y = lat,
+                  fill = ..density..),
+              alpha = 0.7) +
+  # coord_map() +
+        theme_gg +
+  scale_fill_gradient(low = 'darkorange',
+                      high = 'darkblue',
+                      # guide = guide_legend(reverse=TRUE), 
+                      name = 'Bed net value index') +
+  xlab('Longitude') +
+  ylab('Latitude') +
+  ggtitle('Example of results: preference for bed nets')
+
+```
+
+```{r}
+# SATELITE MAPS FOR LOCALITIES
+
+ggmap(temp) +
+      theme_gg +
+    coord_cartesian() +
+  stat_binhex(data = uncovered,
+              geom = 'hex',
+              aes(x = long, 
+                  y = lat,
+                  fill = ..density..),
+              alpha = 0.7) +
+               facet_wrap(~localidade, nrow = 2) +
+  scale_fill_gradient(low = 'darkorange',
+                      high = 'darkblue',
+                      # guide = guide_legend(reverse=TRUE), 
+                      name = 'Age-adjusted bed net receptiveness') +
+  xlab('Longitude') +
+  ylab('Latitude') +
+  ggtitle('Example of results: locality-specific indexing')
+
+```
+
+```{r}
+# Kernel density surfaces
+ggmap(temp) +
+        theme_gg +
+    coord_cartesian() +
+  stat_density2d(data = uncovered,
+                 aes(x = long,
+                     y = lat,
+                     fill = ..level..),
+                 geom = 'polygon') +
+                 # colour = class,
+                 # bins = 30,
+            facet_wrap(~localidade, nrow = 2) +
+  scale_fill_gradient(low = 'darkorange',
+                      high = 'darkblue',
+                      # guide = guide_legend(reverse=TRUE), 
+                      name = 'IRR aversion index') +
+  xlab('Longitude') +
+  ylab('Latitude') +
+  ggtitle('Satelite-based maps (for CHWs)')
+```
+
+```{r}
+# Zoom ins
+# Satelite-based atlas map (for health care workers)
+if('tempmap2.RData' %in% dir('/tmp')){
+  load('/tmp/tempmap2.RData')
+} else {
+  temp <- get_map(location = c(32.81, -25.41),
+                maptype = 'roadmap', 
+                zoom = 14)
+  save('temp', file = '/tmp/tempmap2.RData')
+}
+
+# Subset data
+uncovered <- random@data
+uncovered$keep <- ifelse(
+  uncovered$lat > -25.39 | uncovered$lat < -25.415 |
+    uncovered$long >32.815 | uncovered$long <32.8,
+  sample(c(TRUE, FALSE), 1, prob = c(0.1, 0.9)),
+         TRUE)
+uncovered <- uncovered[uncovered$keep,]
+
+ggmap(temp) +
+        theme_gg +
+  geom_point(data = uncovered,
+             aes(x = long,
+                 y = lat,
+                 color = coverage)) +
+  scale_colour_gradient(low = 'darkorange',
+                      high = 'darkblue',
+                      # guide = guide_legend(reverse=TRUE), 
+                      name = 'Household mosquito control aversion index') +
+  xlab('Longitude') +
+  ylab('Latitude') +
+  ggtitle('Small area satelite-based maps (for CHWs)')
+```
+
