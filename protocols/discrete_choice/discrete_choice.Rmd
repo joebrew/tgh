@@ -2,10 +2,9 @@
 title: "Protocol - Malaria control interventions: a discrete choice experiment for measuring community preference"
 author: 
   - Joe Brew
-  - Elisa Sicuri  
   - Charfudin Sacoor 
   - Alberto García-Basteiro
-  - Celine Aerts
+  - Elisa Sicuri  
 latex_engine: xelatex
 output:
   pdf_document:
@@ -46,9 +45,14 @@ source('helpers.R')
 
 # Introduction  
 
+
 In public health, the difference between and intervention's efficacy and effectiveness can often be explained in large part due to a community's aversion or receptiveness to the treatment being offered. In the struggle against malaria, a great deal of academic attention has focused on the _biological_, _medical_, and _logistical_ feasibility of various vector control and malaria treatment approaches.  However, there is a lack of attention towards a corresponding _acceptability_ of these approaches. To the extent that the elimination of malaria will be contingent on a massive "scaling up" of interventions, understanding preferences regarding malaria control is an essential piece of the eradication puzzle.  
 
-# Objectives and context  
+
+
+
+
+# Objectives and implications  
 
 ## Primary objective   
 This project has one primary objective: to understand community preferences, acceptance and aversion to malaria control approaches in the district of Manhiça, Mozambique. 
@@ -76,7 +80,14 @@ In addition to its specific scientific objectives and knowledge products (above)
 
 # Methods and approach  
 
-## Data  
+## Study area  
+
+## Study design  
+
+## Timing and duration  
+
+
+## Datasets    
 
 The preliminary datasets required for the carrying out of this project are:  
 
@@ -88,11 +99,10 @@ Using the above two sources to guide sampling and outreach, the researchers will
 - Discrete choice questionnaire responses
 - Malaria control interviews / guided focus group discussion transcripts  
 
-## Methodology  
 
-### Data collection     
+## Data collection     
 
-#### Quantitative  
+### Quantitative  
 
 Using the Manhiça health district census, a sample of 250 households will be enumerated.  From each of those households, all adults will (18+ years of age) will be invited (in-person) to participate in the questionnaire (quantitative) portion of the study. The questionnaire will be entirely in the form of discrete choices, a methodology which has the advantage of parsing ranked preference and explicitly quantifying preference through implicit trae-offs.  The World Bank has suggested that discrete choice experiments are "extremely useful for policymakers", which is of particular relevance to the malaria eradication campaign.  
 
@@ -105,7 +115,7 @@ Data obtained from the questionnaire will be digitized and then destroyed.  The 
 
 The entire questionnaire is availabe in the appendix.  
 
-#### Qualitative  
+### Qualitative  
 
 In order to complement the quantitative (above) approach, one-on-one interviews and guided focus group discussions will also be administered.  One-on-one interviews will be offered to all questionnaire participants on-site (at the participant's home).  Guided focus group discussions will take place at the CISM on 5 different days:  
 
@@ -123,16 +133,23 @@ Both the interview and the guided focus groups will be semi-structured.  The bas
 
 
 
-### Data analysis  
+## Data analysis  
 
-#### Quantitative  
+### Quantitative  
 
 The discrete choice survey will be analyzed using logistic regression.  The results of this analysis will suggest not only which malaria control methods are most preferred, but will also quantify the differences between preferences, allowing for integration into economic and simulation models.  
+
+### Qualtiative  
+
+(Need to add stuff here)
 
 ## Research team  
 
 Details on members of the research team are available at [www.economicsofmalaria.com](www.economicsofmalaria.com).   
 
+# Ethics  
+
+# References  
 
 # Appendix  
 
