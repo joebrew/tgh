@@ -1,0 +1,67 @@
+---
+title: "Abstract: Quantifying the economic benefits of privately funded malaria control interventions in Maragra, Mozambique"
+author: 
+  - Joe Brew*
+  - Laia Cirera*
+  - Elisa Sicuri*  
+csl: health-economics-policy-and-law.csl
+output:
+  pdf_document:
+    includes:
+      in_header: style.sty
+  html_document: default
+highlight: zenburn
+latex_engine: xelatex
+bibliography: library.bib
+---
+
+
+
+
+```{r, echo=FALSE, comment=NA, message=FALSE, warning=FALSE} 
+#libraries
+library(ggmap)
+library(ggplot2)
+library(grid)
+library(dplyr)
+library(knitr)
+library(ggthemes)
+library (rgdal)
+library(RColorBrewer)
+library(maptools)
+opts_chunk$set(comment = NA, message = FALSE, echo = FALSE, results = 'hide', fig.height = 6, warning = FALSE, fig.width = 6)
+```
+
+```{r}
+suppressWarnings(library(xtable))
+options(xtable.comment = FALSE)
+```
+
+```{r}
+source('helpers.R')
+```
+
+
+\begin{changemargin}{1cm}{1cm} 
+
+\begin{center}
+\Large{\textbf{Abstract}}
+\end{center}
+
+\begin{large}
+\textbf{Context:} The eradication of malaria could be accelerated by enlisting multiple non-governmental actors, including large private firms operating in endemic regions. Participation, however, relies on a clear and accurate quantification of the cost and impact of malaria control activities on economic output. This project uses the case of the sugar mill of Maragra Açucar CA (southern Mozambique) to assess the impact of privately-managed indoor residual spraying on workers' economic output (in terms of both absenteeism and productivity).\\
+
+\textbf{Hypothesis:} Indoor residual spraying reduces worker absenteeism, and the savings in increased productivity are greater than the costs of intervention implementation.\\
+
+\textbf{Methods:} We employ a "difference in differences" approach to assess the causal impact of indoor residual spraying on worker absenteeism. To avoid omitted variable bias, we complement our analysis with both in-person interviews of managers and employees, and use elastic net regression for variable selection. To estimate causal impact, we regress time since spraying on absenteeism, adjusting for seasonality, worker occupation and sociodemographic characteristics and holidays. \\
+
+\textbf{Results:} Undetermined. This research project is currently in progress. Regardless of whether our hypothesis is current or not, we will present the results of the project. \\
+
+
+
+\end{large}
+
+\end{changemargin}
+
+* All authors affiliated with the Institue of Global Health of Barcelona (www.isglobal.org).
+
