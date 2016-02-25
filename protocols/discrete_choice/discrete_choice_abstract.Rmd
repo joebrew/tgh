@@ -1,0 +1,64 @@
+---
+title: "Abstract - Malaria control interventions: a discrete choice experiment for measuring community preference"
+author: 
+  - Joe Brew*
+  - Laia Cirera*
+  - Elisa Sicuri*  
+output:
+  pdf_document:
+    includes:
+      in_header: style.sty
+  html_document: default
+highlight: zenburn
+latex_engine: xelatex
+---
+
+
+
+
+```{r, echo=FALSE, comment=NA, message=FALSE, warning=FALSE} 
+#libraries
+library(ggmap)
+library(ggplot2)
+library(grid)
+library(dplyr)
+library(knitr)
+library(ggthemes)
+library (rgdal)
+library(RColorBrewer)
+library(maptools)
+opts_chunk$set(comment = NA, message = FALSE, echo = FALSE, results = 'hide', fig.height = 6, warning = FALSE, fig.width = 6)
+```
+
+```{r}
+suppressWarnings(library(xtable))
+options(xtable.comment = FALSE)
+```
+
+```{r}
+source('helpers.R')
+```
+
+
+\begin{changemargin}{1cm}{1cm} 
+
+\begin{center}
+\Large{\textbf{Abstract}}
+\end{center}
+
+\begin{large}
+\textbf{Context:} In public health, the difference between and intervention's efficacy and effectiveness can often be explained in large part due to a community's aversion or receptiveness to the treatment being offered. In the struggle against malaria, a great deal of academic attention has focused on the \emph{biological}, \emph{medical}, and \emph{logistical} feasibility of various vector control and malaria treatment approaches.  However, there is a lack of attention towards a corresponding \emph{acceptability} of these approaches. To the extent that the elimination of malaria will be contingent on a massive "scaling up" of interventions, understanding preferences regarding malaria control is an essential piece of the eradication puzzle. \\
+
+\textbf{Hypothesis:} Communities and individuals have heterogeneous preferences regarding malaria control interventions.\\
+
+\textbf{Methods:} We conduct a discrete choice experiment among residents of the district of Manhiça (southern Mozambique). We administer a survey consisting of binary preferential options pertaining to malaria control, and quantify, via logistic regression, community preference as a function of both its sociodemographic as well as geographical components. \\
+
+\textbf{Results:} Undetermined. This research project is currently in progress. Regardless of whether our hypothesis is accepted or rejected, we will present the results and their implications for the private financing of malaria control in general. \\
+
+
+
+\end{large}
+
+\end{changemargin}
+
+* All authors affiliated with the Institue of Global Health of Barcelona (www.isglobal.org).
