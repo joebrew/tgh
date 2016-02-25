@@ -55,7 +55,7 @@ source('helpers.R')
 
 \textbf{Methods:} We employ a "difference in differences" approach to assess the causal impact of indoor residual spraying on worker absenteeism. To avoid omitted variable bias, we complement our analysis with both in-person interviews of managers and employees, and use elastic net regression for variable selection. To estimate causal impact, we regress time since spraying on absenteeism, adjusting for seasonality, worker occupation and sociodemographic characteristics and holidays. \\
 
-\textbf{Results:} Undetermined. This research project is currently in progress. Regardless of whether our hypothesis is accepted or rejecte, we will present the results of the project and their implications for the private financing of malaria control in general. \\
+\textbf{Results:} Undetermined. This research project is currently in progress. Regardless of whether our hypothesis is accepted or rejected, we will present the results and their implications for the private financing of malaria control in general. \\
 
 
 
