@@ -38,7 +38,7 @@ options(xtable.comment = FALSE)
 ```
 
 ```{r}
-source('helpers.R')
+# source('helpers.R')
 ```
 
 
@@ -60,18 +60,18 @@ source('helpers.R')
 # Background  
 
 
-The burden of malaria is extremly high in Mozambique, even by regional standards [@World1999]. With a prevalence as high as 40%, malaria accounts for 29% of all deaths, and 42% of deaths among children under five [@dhs]. Nearly a quarter of maternal deaths are due to malaria [@Singh2014]. Along with HIV/AIDS [@Berg2014], malaria is one of the greatest threats to public health in southern Mozambique.
+The burden of malaria is extremly high in Mozambique, even by regional standards [@World1999]. With a prevalence as high as 40%, malaria accounts for 29% of all deaths, and 42% of deaths among children under five [@dhs]. Nearly a quarter of maternal deaths are due to malaria [@Singh2014]. Along with HIV/AIDS [@Berg2014], malaria is one of the greatest threats to public health in southern Mozambique.  
 
+In addition to malaria's impact on the health of its victims, the illness also has major economic consequences for the ill. Children who survive malaria face hurdles which can have life-long economic repurcussions, particularly those related to intellectual development (such as cerebral malaria) [@Idro2010] and general growth anemia [@Mabunda2008]. Their families also pay economically - 32-34% of households incur malaria-related costs which rise to the level of "catastrohpic" per the World Health Organization's standards (ie, 10% of household income or 40% of non-food income) [@CastilloRiquelme2008]. Though the burden of malaria is decreasing [@Murray2014], the costs of the disease at the individual level remain enormous, given that the disease affects primarily those with low socioeconomic status.  
 
+The economic effects of malaria are not only absorped but its direct victims, but also by the economy as a whole. Malaria control has been found to be associated with population-level economic growth in multiple studies (REFERENCES NEEDED). By eliminating early-life blocks on the development of a population's human capital, the returns on a reduction in malaria's burden are long-term and exponential.  
 
-In addition to malaria's impact on the health of its victims, the illness also has major economic consequences for the ill. Children who survive malaria face hurdles which can have life-long economic repurcussions, particularly those related to intellectual development (such as cerebral malaria) [@Idro2010] and general growth anemia [@Mabunda2008]. Their families also pay economically - 32-34% of households incur malaria-related costs which rise to the level of "catastrohpic" per the World Health Organization's standards (ie, 10% of household income or 40% of non-food income) [@CastilloRiquelme2008]. Though the burden of malaria is decreasing [@Murray2014], the costs of the disease at the individual level remain enormous, given that the disease affects primarily those with low socioeconomic status.
-
-The economic effects of malaria are not only absorped but its direct victims, but also by the economy as a whole.  ....
-
-- *Malaria is bad for firms*  
+From a public health perspective, the case for the need to control and eventually eradicate malaria is strong and has been made clear in multiple studies across time and geography. However, the role which private firms which operate in malaria endemic regions can be expected to play is less obvious, given the current lack of compelling evidence regarding the return on investment in short- and medium-terms for privately-funded malaria control activities. To the extent that many firms already carry out some form of "in-house" malaria control, analyzing those firms' data offers the unique opportunity to assess whether the benefits (in purely economic terms) of those activities outweight the costs, or vice-versa.
 
 
 # Study Rationale
+
+In recent years, much of the discourse regarding malaria in endemic regions has shifted from control to eradication (CITATION NEEDED). This shift will require changes not only in the implementation of public health interventions, but also the recruitment and sustenance of multiple and novel fronts in the fight against malaria. One potential source 
 
 *Control of malaria is a potential win/win for business/government*  
 
@@ -121,7 +121,7 @@ Details on members of the research team are available at [www.economicsofmalaria
 # Appendix  
 
 
-```{r}
+```{r, eval = FALSE}
 library(raster)
 # Get map of mozambique
 moz <- getData('GADM', country = 'MOZ', level = 3)
@@ -202,7 +202,7 @@ ggplot(man_fort,
   theme_gg
 ```
 
-```{r}
+```{r, eval = FALSE}
 # Localidade-scores
 
 ggplot(man_fort,

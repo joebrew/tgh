@@ -43,6 +43,8 @@ options(xtable.comment = FALSE)
 source('helpers.R')
 ```
 
+\newpage
+
 # Introduction  
 
 
@@ -81,6 +83,7 @@ In addition to its specific scientific objectives and knowledge products (above)
 # Methods and approach  
 
 ## Study area  
+The study will take place in the Manhiça district of the Maputo province in southern Mozambique.
 
 ## Study design  
 
