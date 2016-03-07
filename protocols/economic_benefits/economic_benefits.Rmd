@@ -68,6 +68,7 @@ The economic effects of malaria are not only absorped but its direct victims, bu
 
 From a public health perspective, the case for the need to control and eventually eradicate malaria is strong and has been made clear in multiple studies across time and geography. However, the role which private firms which operate in malaria endemic regions can be expected to play is less obvious, given the current lack of compelling evidence regarding the return on investment in short- and medium-terms for privately-funded malaria control activities. To the extent that many firms already carry out some form of "in-house" malaria control, analyzing those firms' data offers the unique opportunity to assess whether the benefits (in purely economic terms) of those activities outweigh the costs, or vice-versa.
 
+Findings of the few studies performed are discordant, pointing either to higher earnings and higher literacy rates in adults born after malaria campaigns or to non significant results. The value of these studies to inform policy making processes is, thus, questionable.     
 
 # Study Rationale
 
@@ -75,42 +76,51 @@ In recent years, much of the discourse regarding malaria in endemic regions has 
 
 Though private, foreign-owned firms are a potential source of funding for malaria control and eradication, it is not reasonable to expect significant participation at the population level without a clear demonstration of the value proposition from a private perspective. Though the non-tangible benefits of "corporate social responsibility" (good publicity, etc.) are certainly appealing to private firms, investment would likely increase significantly if the costs and benefits of malaria control from a purely economic perspective were quantified. On the one hand, if it can be compellingly demonstrated that privately-funded malaria control interventions offer a significant return on investment, this evidence could entail an organic/spontaneous investment increase across the country. On the other hand, if it were found that private foreign investment is not cost-effective from the perspective of private foreign firms, then this may spur donors and the public sector to better coordinate, scale, and work with firms to fill the gaps.
 
+
+Evaluation analyses of the effect of malaria control on indicators of economic growth deriving from an actual program may bring a unique contribution to the literature. Most likely, it would clarify if malaria control interventions have a significant impact on labour productivity and would provide important information for future health policy decisions. 
+
+As a consequence of the malaria control activities undertaken, in conjunction with the Ministries of Health of the countries in which the company operates Maragra Açucar in Mozambique as well as all the other sugar Illovo factories operating in different countries, is likely to benefit not only the health of its workers and of their families but also their capacity to work and to contribute to the economic growth and development of the area. Measuring this potential impact now is of paramount importance as this may serve as baseline information for the evaluation of a future elimination programme in the area. 
+
+
 Ultimately, the justification for this study is opportunity. The presence in Mozambique of large, foreign firms with sophisticated systems for inventory, employee activities, and (in some cases) even on-site clinics means that, for the first time, there exist data which can shed light on the feasibility and scalability scaling up non-traditional fronts in the fight against malaria.
 
-\vfill
-
-\newpage
 
 # Objectives  
 
 ## Primary objective  
 
-The primary objective is to quantify the direct economic costs and benefits of malaria interventions carried out by private firms, using the case of Maragra Açucar CA.
+The primary objective is to identify and measure the impact of malaria interventions on selected economic indicators.
+
 
 ## Specific objectives
 
 In addition, and in complentarity to the primary objective, secondary objectives include:  
 
-- The quantification of worker absenteeism over time, and in association with malaria control activities.
-- The quantification of worker _productivity_ over time, and in association with malaria control activities.
+- The quantification of the direct economic costs and benefits of malaria interventions carried out by private firms, using the case of Maragra Açucar CA.
+- The quantification of worker absenteeism over time, and in causal association with malaria control activities.
+- The quantification of worker _productivity_ over time, and in causal association with malaria control activities.
 - The quantification of worker _illness_ over time, specifically in regards to those diseases directly related to vector control, and the corresponding estimation of the direct treatment costs.
 - The estimation of costs associated with privately-funded malaria control activities.
 - The overall and intervention-specific return on investment for privately-funded malaria control activities.
 
 # Methods  
 
+
 ## General  
 
+We plan to identify the relationship between malaria and workers’ absenteeism from Maragra Açucar (and from the other factories) by comparing information possibly routinely recorded by the company before and after activities of malaria control (such as fumigation or bed net distribution or other) are carried out. A further comparison could be undertaken between absenteeism of workers living in areas with different levels of malaria incidence or simply with different timing of the implementation of malaria control activities. Obtaining information on the reason of workers’ absenteeism constitutes additional value in this analysis. In order to assess the actual impact of malaria on absenteeism, it is essential to control for confounding factors that may also affect absenteeism, such as workers’ age, socioeconomic status, living place, and many others.
 
 ### The data 
 
+In the spring and summer of 2016, under the auspices of the MALTEM (Mozambican Alliance Towards the Elimination of Malaria), and in cooperation with the CISM (Centro de Investigaçao em Saude de Manhiça) and Maragra Açucar CA, data will be collected. Individual information on absenteeism (possibly with the reason of absenteeism), age, gender, job position, workers’ place of residence, educational level, information on whether the worker is a migrant and if yes, when and how long the worker lives and distance to job are all of great importance for this study. In the best case scenario, a complete panel data (e.g., monthly individual data) would allow to discern how malaria control activities are translated into the outcomes of interest, in time.
 
-In the spring and summer of 2016, under the auspices of the MALTEM (Mozambican Alliance Towards the Elimination of Malaria), and in cooperation with the CISM (Centro de Investigaçao em Saude de Manhiça) and Maragra Açucar CA, data will be collected pertaining to:  
+For the above, the following specific data will be required:  
+
 
 - All vector-control activities carried out by Maragra (indoor residual spraying and bednets distribution), specifically in relation to time and location.
 - The costs (both direct and indirect) associated with the above activities.
 - Worker absenteeism data.
-- Worker illness data (from on-site clinics).
+- Clinic data pertaining to worker illnesses / visits.
 - Worker sociodemographic and residential data.
 - Worker performance/output data (if available).
 - Worker wages and indirect costs (if available).
@@ -307,7 +317,6 @@ ggplot(man_fort,
 
 \columnsend
 
-\newpage
 
 # References  
 
