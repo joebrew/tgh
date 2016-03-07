@@ -29,7 +29,7 @@ library(ggthemes)
 library (rgdal)
 library(RColorBrewer)
 library(maptools)
-opts_chunk$set(comment = NA, message = FALSE, echo = FALSE, results = 'hide', fig.height = 6, warning = FALSE, fig.width = 6)
+opts_chunk$set(comment = NA, message = FALSE, echo = FALSE, results = 'hide', fig.height = 3.5, warning = FALSE)
 ```
 
 ```{r}
@@ -64,61 +64,146 @@ The burden of malaria is extremly high in Mozambique, even by regional standards
 
 In addition to malaria's impact on the health of its victims, the illness also has major economic consequences for the ill. Children who survive malaria face hurdles which can have life-long economic repurcussions, particularly those related to intellectual development (such as cerebral malaria) [@Idro2010] and general growth anemia [@Mabunda2008]. Their families also pay economically - 32-34% of households incur malaria-related costs which rise to the level of "catastrohpic" per the World Health Organization's standards (ie, 10% of household income or 40% of non-food income) [@CastilloRiquelme2008]. Though the burden of malaria is decreasing [@Murray2014], the costs of the disease at the individual level remain enormous, given that the disease affects primarily those with low socioeconomic status.  
 
-The economic effects of malaria are not only absorped but its direct victims, but also by the economy as a whole. Malaria control has been found to be associated with population-level economic growth in multiple studies (REFERENCES NEEDED). By eliminating early-life blocks on the development of a population's human capital, the returns on a reduction in malaria's burden are long-term and exponential.  
+The economic effects of malaria are not only absorped but its direct victims, but also by the economy as a whole. Malaria control has been found to be associated with population-level economic growth in multiple studies [@Barofsky2015]. By eliminating early-life blocks on the development of a population's human capital, the returns on a reduction in malaria's burden are long-term and exponential.  
 
-From a public health perspective, the case for the need to control and eventually eradicate malaria is strong and has been made clear in multiple studies across time and geography. However, the role which private firms which operate in malaria endemic regions can be expected to play is less obvious, given the current lack of compelling evidence regarding the return on investment in short- and medium-terms for privately-funded malaria control activities. To the extent that many firms already carry out some form of "in-house" malaria control, analyzing those firms' data offers the unique opportunity to assess whether the benefits (in purely economic terms) of those activities outweight the costs, or vice-versa.
+From a public health perspective, the case for the need to control and eventually eradicate malaria is strong and has been made clear in multiple studies across time and geography. However, the role which private firms which operate in malaria endemic regions can be expected to play is less obvious, given the current lack of compelling evidence regarding the return on investment in short- and medium-terms for privately-funded malaria control activities. To the extent that many firms already carry out some form of "in-house" malaria control, analyzing those firms' data offers the unique opportunity to assess whether the benefits (in purely economic terms) of those activities outweigh the costs, or vice-versa.
 
 
 # Study Rationale
 
-In recent years, much of the discourse regarding malaria in endemic regions has shifted from control to eradication (CITATION NEEDED). This shift will require changes not only in the implementation of public health interventions, but also the recruitment and sustenance of multiple and novel fronts in the fight against malaria. One potential source 
+In recent years, much of the discourse regarding malaria in endemic regions has shifted from control to eradication [@Tanner2015]. This shift will require changes not only in the implementation of public health interventions, but also the recruitment and sustenance of multiple and novel fronts in the fight against malaria. One potential new front and source of funding would be private firms, especially given the astounding growth of foreign direct investment in Mozambique over the last two decades.
 
-*Control of malaria is a potential win/win for business/government*  
+Though private, foreign-owned firms are a potential source of funding for malaria control and eradication, it is not reasonable to expect significant participation at the population level without a clear demonstration of the value proposition from a private perspective. Though the non-tangible benefits of "corporate social responsibility" (good publicity, etc.) are certainly appealing to private firms, investment would likely increase significantly if the costs and benefits of malaria control from a purely economic perspective were quantified. On the one hand, if it can be compellingly demonstrated that privately-funded malaria control interventions offer a significant return on investment, this evidence could entail an organic/spontaneous investment increase across the country. On the other hand, if it were found that private foreign investment is not cost-effective from the perspective of private foreign firms, then this may spur donors and the public sector to better coordinate, scale, and work with firms to fill the gaps.
 
-*For firms to step up, compelling evidence quantifying their potential benefits is needed*  
+Ultimately, the justification for this study is opportunity. The presence in Mozambique of large, foreign firms with sophisticated systems for inventory, employee activities, and (in some cases) even on-site clinics means that, for the first time, there exist data which can shed light on the feasibility and scalability scaling up non-traditional fronts in the fight against malaria.
 
+\vfill
+
+\newpage
 
 # Objectives  
 
 ## Primary objective  
 
-Quantify the direct economic benefits of malaria intervention
+The primary objective is to quantify the direct economic costs and benefits of malaria interventions carried out by private firms, using the case of Maragra Açucar CA.
 
 ## Specific objectives
 
+In addition, and in complentarity to the primary objective, secondary objectives include:  
 
+- The quantification of worker absenteeism over time, and in association with malaria control activities.
+- The quantification of worker _productivity_ over time, and in association with malaria control activities.
+- The quantification of worker _illness_ over time, specifically in regards to those diseases directly related to vector control, and the corresponding estimation of the direct treatment costs.
+- The estimation of costs associated with privately-funded malaria control activities.
+- The overall and intervention-specific return on investment for privately-funded malaria control activities.
 
-# Methods
+# Methods  
 
 ## General  
 
+
+### The data 
+
+
+In the spring and summer of 2016, under the auspices of the MALTEM (Mozambican Alliance Towards the Elimination of Malaria), and in cooperation with the CISM (Centro de Investigaçao em Saude de Manhiça) and Maragra Açucar CA, data will be collected pertaining to:  
+
+- All vector-control activities carried out by Maragra (indoor residual spraying and bednets distribution), specifically in relation to time and location.
+- The costs (both direct and indirect) associated with the above activities.
+- Worker absenteeism data.
+- Worker illness data (from on-site clinics).
+- Worker sociodemographic and residential data.
+- Worker performance/output data (if available).
+- Worker wages and indirect costs (if available).
+
+Additionally, to account for confounding factors in terms of both population characteristics and interventions, both census and MALTEM activities data will be utilized.
+
+Finally, to account for outsides factors, precipitation and temperature data will be used for the purposes of modeling and adjusting for seasonlity.
+
 ### Study area  
+
+The study area pertains to the sugar plantation and factory of Maragra.
 
 ### Study design  
 
+This study is purely retrospective, using existing data sources, with no intervention. It relies on the "natural experiment" of differential applications of a treatment (IRS) by time and geography in relation to economic outcomes (absenteeism and productivity). It has both a descriptive (correlational) component, as well an analytical component (a retrospective cohort study).
+
 ### Study population  
+
+The study population consists of all workers of Maragra Açucar CA from the period of 2010 through 2015.
 
 ### Timing and duration of the study  
 
+Data collection will take place in May-June of 2016. Analysis will be carried out in July-August of 2016. Results and manuscript writing can be expected to be finished by the end of August 2016. Internal vetting of manuscript and submission for publication will be finished by the end of September, 2016.  
+
 ### Data collection and management  
+
+All data are retrospective and already in existence. In this sense, data are to be "compiled" rather than collected.  Compiled data will be stored on an encrypted drive to which only the PI (Elisa Sicuri) and researcher (Joe Brew) will have access. 
 
 ### Data analysis  
 
+Two analytical approaches are envisioned for the impact evaluation and cost quantification of Maragra's malaria control initiatives on economic outcomes, respectively:  
+
+1. A "difference in differences" approach to assess the impact of IRS in terms of the aggregated before/after blocks, accounting for omitted variable bias. 
+
+```{r}
+a <- seq(10, 7, length = 100)
+b <- c(seq(9, 7.5, length = 50), (seq(6, 4.5, length = 50)))
+
+plot(x = 1:100,
+     y = a,
+     type = 'l',
+     ylim = c(0,11),
+     xlab = 'Time',
+     ylab = 'Absenteeism')
+lines(x = 1:100,
+      y = b,
+      col = 'red')
+text(x = 12, 
+     y = 10.5,
+     label = 'Control group',
+     cex = 1)
+text(x = 15, 
+     y = 8,
+     label = 'Treatment group',
+     col = 'Red',
+     cex = 1)
+text(x = 50,
+     y = 6.5,
+     label = 'Effect of treatment',
+     cex = 0.8)
+title(main = 'Example of difference in differences methodology')
+
+```
+
+2. Logistic regression to assess the likelihood of worker absence as a function of time since indoor residual spraying, adjusting for confouding variables (weather/seasonality, sociodemogrpahic characteristics, worker type, etc.), thereby assessing IRS' waning impact over time.  
+
+```{r}
+vals <- c(-0.3, -0.13, 0.1, 0.4, 0.2, -0.12)
+bp <- barplot(vals,
+              names.arg = gsub(' ', '\n', c('IRS', 'Bednet', 'Male', 'Rainy season', 'Agricultural worker', 'Non-resident')),
+              cex.names = 0.7,
+              border = NA,
+              xlab='Characteristic',
+              ylab = 'Effect on likelihood of absenteeism',
+              cex.lab = 1.2)
+title(main = 'Example of logistic regression methodology')
+```
+
+Following these two analyses, the extension to the costing portion will be relatively simple, requiring only basic arithmetic and counterfactual scenario generations.
+
 ### Ethics clearance  
+
+This project falls under the auspices of the already-approved protocol of the MALTEM economic evaluation.  
 
 ### Confidentiality  
 
-## Methodology specifications by objective  
-
+All data will be stored on encryped disks, and identifiable data will only be accessible to the PI and main researcher.
 
 # Details on and qualifications of research team  
 
 Details on members of the research team are available at [www.economicsofmalaria.com](www.economicsofmalaria.com).   
 
 
-# References  
-
-# Appendix  
 
 
 ```{r, eval = FALSE}
@@ -219,4 +304,12 @@ ggplot(man_fort,
   theme_gg
 ```
 
+
 \columnsend
+
+\newpage
+
+# References  
+
+
+
