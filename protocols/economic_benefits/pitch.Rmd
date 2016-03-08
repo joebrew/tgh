@@ -1,0 +1,215 @@
+---
+title: "Quantifying the economic impact of malaria control interventions in Maragra, Mozambique: a win-win for private industry and public health"
+author: 
+  - Joe Brew
+  - Elisa Sicuri  
+csl: health-economics-policy-and-law.csl
+output:
+  pdf_document:
+    includes:
+      in_header: style.sty
+  html_document: default
+highlight: zenburn
+latex_engine: xelatex
+bibliography: library.bib
+---
+
+
+
+
+```{r, echo=FALSE, comment=NA, message=FALSE, warning=FALSE} 
+#libraries
+library(ggmap)
+library(ggplot2)
+library(grid)
+library(dplyr)
+library(knitr)
+library(ggthemes)
+library (rgdal)
+library(RColorBrewer)
+library(maptools)
+opts_chunk$set(comment = NA, message = FALSE, echo = FALSE, results = 'hide', fig.height = 3.5, warning = FALSE)
+```
+
+```{r}
+suppressWarnings(library(xtable))
+options(xtable.comment = FALSE)
+```
+
+```{r}
+# source('helpers.R')
+```
+
+```{r}
+library(readr)
+t1 <- read_csv('table_1.csv')
+```
+
+
+
+\begin{changemargin}{3cm}{3cm} 
+
+\begin{center}
+\textbf{Summary}
+\end{center}
+
+\emph{This document serves to give an overview of the rationale for assessing the impact of malaria control interventions on economic outputs, as well as the advantages of such an analysis, from both the perspectives of the research team (CISM, ISGlobal), as well as Maragra Açucar, CA.}
+
+\end{changemargin}
+
+\newpage
+
+
+\columnsbegin
+
+# Background  
+
+
+The burden of malaria is extremly high in Mozambique, even by regional standards [@World1999]. With a prevalence as high as 40%, malaria accounts for 29% of all deaths, and 42% of deaths among children under five [@dhs]. Nearly a quarter of maternal deaths are due to malaria [@Singh2014]. 
+
+In addition to malaria's impact on the health of its victims, the illness also has major economic consequences for the ill. 32-34% of households incur malaria-related costs which rise to the level of "catastrohpic" per the World Health Organization's standards (ie, 10% of household income or 40% of non-food income) [@CastilloRiquelme2008]. Though the burden of malaria is decreasing [@Murray2014], the costs of the disease at the individual level remain enormous, given that the disease affects primarily those with low socioeconomic status.  
+
+The economic effects of malaria are not only absorped but its direct victims, but also by the economy as a whole. Malaria control has been found to be associated with population-level economic growth in multiple studies [@Barofsky2015]. By eliminating early-life blocks on the development of a population's human capital, the returns on a reduction in malaria's burden are long-term and exponential.  
+
+From a public health perspective, the case for the need to control and eventually eradicate malaria is strong and has been made clear in multiple studies across time and geography. However, the role which private firms which operate in malaria endemic regions can be expected to play is less obvious, given the current lack of compelling evidence regarding the return on investment in short- and medium-terms for privately-funded malaria control activities. To the extent that many firms already carry out some form of "in-house" malaria control, analyzing those firms' data offers the unique opportunity to assess whether the benefits (in purely economic terms) of those activities outweigh the costs, or vice-versa.
+
+Though private, foreign-owned firms are a potential source of funding for malaria control and eradication, it is not reasonable to expect significant participation at the population level without a clear demonstration of the value proposition from a private perspective. Though the non-tangible benefits of "corporate social responsibility" (good publicity, etc.) are certainly appealing to private firms, investment would likely increase significantly if the costs and benefits of malaria control from a purely economic perspective were quantified. On the one hand, if it can be compellingly demonstrated that privately-funded malaria control interventions offer a significant return on investment, this evidence could entail an organic/spontaneous investment increase across the country. On the other hand, if it were found that private foreign investment is not cost-effective from the perspective of private foreign firms, then this may spur donors and the public sector to better coordinate, scale, and work with firms to fill the gaps.
+
+
+
+Ultimately, the justification for this study is opportunity. Maragra Açucar CA has sophisticated sophisticated systems for inventory, employee activities, and even health. Analyzing the outputs of those systems offers the chance to improve business and health: a true win-win.
+
+# Advantages  
+
+## From a public health perspective  
+
+Cooperating with Maragra will entail multiple benefits from the perspective of both research and public health. Especially in light of the Mozambican Alliance Towards the Elimination of Malariaś increased activities, understanding the experience of Maragra is vital to program strategies and efforts.  
+
+Specifically, the research team benefits from this collaboration in the following ways:  
+- Access to a rich dataset on both the temporal and spatial dimensions of malaria control interventions.
+- Access to a rich dataset on the social and demographic characteristics of workers targetted by those interventions. 
+- Access to health and economic outcomes.  
+
+## From Maragra's perspective  
+
+Maragra Açucar can also benefit directly from this collaboration. Specifically, potential areas of interest include:  
+
+- The cleaning and digitization of clinic data.
+- Study results pertaining to absenteeism and productivity which could have an impact on operations.
+- A side cost-effectiveness analysis which could be useful from a business perspective.
+
+\columnsend
+
+
+# The data needed
+
+Individual level data (i.e., data per worker) will be needed. Individual information on absenteeism (possibly with the reason of absenteeism), age, gender, job position, workers’ place of residence, educational level, information on whether the worker is a migrant and if yes, when and how long the worker lives and distance to job are all of great importance for this study. 
+
+In the best case scenario, a complete panel data (e.g., monthly individual data) would allow to discern how malaria control activities are translated into the outcomes of interest, in time.
+
+In addition, available information on malaria control activities is needed on:
+- type of activity: bed nets distribution, fumigation, etc; 
+- when these activities have been carried out: exact dates; 
+- who carried out such activities: Maragra Açucar or Ministry of Health; 
+- where the activities are carried out: “barrios”.
+Importantly, both workers data and information on malaria control activities should be available for a period of, at least, 5 years. 
+
+
+
+
+
+### Table 1: Worker characteristics  
+
+This table should consist of all known characteristics regarding to workers. This includes (but is not limited to) age, sex, location of residence, type of work, salary, place of origin, etc.  
+
+```{r, results = 'asis'}
+temp <- 
+  data.frame(id = 1:5,
+             name = c('Joao', 'Eusebio', 'Maria', 'Ana', 'Pedro'),
+             sex = c('M', 'M', 'F', 'F', 'M'),
+             residence = paste0('Bairro ', c('1', 'A2', '13', '4', '1')),
+             type = c('Field', 'Field', 'Field', 'Secretarial', 'Management'),
+             origin = c(rep('Manhiça', 3), 'Maputo', 'Maragra'),
+             `contract type` = sample(letters, 5),
+             `years of education` = sample(1:10, 5),
+             religion = sample(c('Muslim', 'Catholic', 'Evangelical', NA), 5, replace = TRUE))
+print(xtable(temp), size = 'small', include.rownames = FALSE)
+```
+
+### Table 2: Worker attendance / absences  
+
+This table should consist of one row for each day that an employee was employeed.
+
+```{r, results = 'asis'}
+dates <- format(seq(as.Date('2012-07-03'),
+             as.Date('2012-07-07'),
+             by = 1),
+             '%B %d, %Y')
+temp <- 
+  data.frame(id = as.character(c(rep(1, 5), rep(2, 5))),
+             date = dates,
+             status = sample(c('present', 'absent', 'late'), 
+                             10,
+                             replace = TRUE,
+                             prob = c(0.7, 0.2, 0.1)))
+print(xtable(temp), size = 'small', include.rownames = FALSE)
+
+```
+
+### Table 3: Worker health  
+
+This table should consist of one row for every visit to the Maragra clinic, indicating both the id number of the worker/patient being attended and the date, as well as the reason for the visit (and discharage diagnosis, if available).
+
+```{r, results = 'asis'}
+dates <- 
+  format(sort(sample(seq(as.Date('2010-01-01'), as.Date('2015-01-01'), by = 1), 10)),
+         '%B %d, %Y')
+temp <- data.frame(id = as.character(sample(1:1000, 10)),
+                   date = dates,
+                   reason = c('accident', 'fever', 'accident',
+                              'accident', 'accident',
+                              'vomiting', 'fever', 'malaria',
+                              'unknown', 'left before being seen'))
+print(xtable(temp), size = 'small', include.rownames = FALSE)
+
+```
+
+### Table 4: IRS activities  
+
+This table should consist of any information pertaining to indoor residual spraying, at the most granular level possible.
+
+```{r, results = 'asis'}
+dates <- 
+  format(sort(sample(seq(as.Date('2010-01-01'), as.Date('2015-01-01'), by = 1), 10)),
+         '%B %d, %Y')
+temp <- data.frame(date = dates,
+                   longitude = sample(seq(-3,-4, length = 1000), 10),
+                   latitude = sample(seq(-33,-34, length = 1000), 10),
+                   address = paste0('House ', sample(1:1000, 10),
+                                    ', Lot ', sample(toupper(letters), 10)),
+                   chemical = 'DDT')
+print(xtable(temp), size = 'small', include.rownames = FALSE)
+
+```
+
+### Table 5: Bednet distribution activities   
+
+If available, this table should include any information regarding either the distribution or presence of bednets among workers.  
+
+```{r, results = 'asis'}
+dates <- 
+  format(sort(sample(seq(as.Date('2010-01-01'), as.Date('2015-01-01'), by = 1), 10)),
+         '%B %d, %Y')
+temp <- data.frame(id = as.character(sample(1:1000, 10)),
+                   date = dates,
+                   `nets distributed` = sample(c(1,2,3), 10, replace = TRUE),
+                   `number of residents` = sample(1:8, 10, replace = TRUE))
+print(xtable(temp), size = 'small', include.rownames = FALSE)
+```
+
+\newpage
+
+# References  
+
+
+
