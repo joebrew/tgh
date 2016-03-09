@@ -1,8 +1,17 @@
 ---
-title: "Quantifying the economic impact of malaria control interventions in Maragra, Mozambique: a win-win for private industry and public health"
+title: "MALTEM PROJECT: Quantifying the economic impact of malaria control interventions in Maragra, Mozambique: a win-win for private industry and public health"
 author: 
-  - Joe Brew
-  - Elisa Sicuri  
+  - Elisa Sicuri +
+  - Joe Brew +
+  - Pedro Aide +
+  - Sergio Alonso +
+  - Eusebio Macete +
+  - Inácio Mandomando +
+  - Quique Bassat +
+  - Pedro Alonso +
+  - John Smith ++ 
+  - Jane Smith ++
+  - Kizito Gondo +++ 
 csl: health-economics-policy-and-law.csl
 output:
   pdf_document:
@@ -56,6 +65,15 @@ t1 <- read_csv('table_1.csv')
 \emph{This document serves to give an overview of the rationale for assessing the impact of malaria control interventions on economic outputs, as well as the advantages of such an analysis, from both the perspectives of the research team (CISM, ISGlobal), as well as Maragra Açucar, CA.}
 
 \end{changemargin}
+
+
+\vfill  
+
+( + Researchers specific to this sub-project )  
+( ++ Over-arching project - MALTEM - associated researchers )  
+( +++ Maragra Açucar CA )
+
+
 
 \newpage
 
@@ -116,13 +134,19 @@ Importantly, both workers data and information on malaria control activities sho
 
 
 
-
+\newpage
 
 ### Table 1: Worker characteristics  
 
 This table should consist of all known characteristics regarding to workers. This includes (but is not limited to) age, sex, location of residence, type of work, salary, place of origin, etc.  
 
+
 ```{r, results = 'asis'}
+dates <- 
+  seq(as.Date('2010-01-01'),
+      as.Date('2015-01-12'), 
+      by = 1)
+dates <- format(dates, '%Y-%m-%d')
 temp <- 
   data.frame(id = 1:5,
              name = c('Joao', 'Eusebio', 'Maria', 'Ana', 'Pedro'),
@@ -130,11 +154,16 @@ temp <-
              residence = paste0('Bairro ', c('1', 'A2', '13', '4', '1')),
              type = c('Field', 'Field', 'Field', 'Secretarial', 'Management'),
              origin = c(rep('Manhiça', 3), 'Maputo', 'Maragra'),
-             `contract type` = sample(letters, 5),
-             `years of education` = sample(1:10, 5),
-             religion = sample(c('Muslim', 'Catholic', 'Evangelical', NA), 5, replace = TRUE))
-print(xtable(temp), size = 'small', include.rownames = FALSE)
+             contract = sample(letters, 5),
+             education_yrs = sample(1:10, 5),
+             religion = sample(c('Muslim', 'Catholic', 'Evangelical', NA), 5, replace = TRUE),
+             contract_start = sample(dates, 5),
+             contract_end = c('still', 'still', dates[1000], 'still', dates[1200]))
+print(xtable(temp), size = 'tiny', include.rownames = FALSE)
 ```
+
+
+\newpage
 
 ### Table 2: Worker attendance / absences  
 
@@ -156,6 +185,8 @@ print(xtable(temp), size = 'small', include.rownames = FALSE)
 
 ```
 
+\newpage
+
 ### Table 3: Worker health  
 
 This table should consist of one row for every visit to the Maragra clinic, indicating both the id number of the worker/patient being attended and the date, as well as the reason for the visit (and discharage diagnosis, if available).
@@ -173,6 +204,8 @@ temp <- data.frame(id = as.character(sample(1:1000, 10)),
 print(xtable(temp), size = 'small', include.rownames = FALSE)
 
 ```
+
+\newpage
 
 ### Table 4: IRS activities  
 
@@ -192,6 +225,8 @@ print(xtable(temp), size = 'small', include.rownames = FALSE)
 
 ```
 
+\newpage
+
 ### Table 5: Bednet distribution activities   
 
 If available, this table should include any information regarding either the distribution or presence of bednets among workers.  
@@ -206,6 +241,36 @@ temp <- data.frame(id = as.character(sample(1:1000, 10)),
                    `number of residents` = sample(1:8, 10, replace = TRUE))
 print(xtable(temp), size = 'small', include.rownames = FALSE)
 ```
+
+\newpage
+
+### Table 6: Costs
+
+If available, this table should include any cost information pertaining to malaria control activities (IRS or bednet distribution) carried out by Maragra.
+
+```{r, results = 'asis'}
+dates <- 
+  format(sort(sample(seq(as.Date('2010-01-01'), as.Date('2015-01-01'), by = 1), 10)),
+         '%B %d, %Y')
+temp <- data.frame(date = dates,
+                   item = c('Purchase of spraying equipment',
+                            'Salary of sprayers',
+                            'Salary of sprayers',
+                            'Purchase of  bednets',
+                            'Gas for distributing bednets',
+                            'Misc office items',
+                            'Salary for bednet distributors',
+                            'Purchasing of bednets',
+                            'Purchase of spraying eqipment',
+                            'Purchase of insecticide'),
+                   amount = sample(1000:100000, 10),
+                   currency = sample(c('Meticais', 'Rand', 'USD'),
+                                     10,
+                                     replace = TRUE))
+print(xtable(temp), size = 'small', include.rownames = FALSE)
+```
+
+
 
 \newpage
 

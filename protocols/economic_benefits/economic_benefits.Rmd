@@ -1,9 +1,17 @@
 ---
-title: "Procedures and analysis plan - Quantifying the economic benefits of privately funded malaria control interventions in Maragra, Mozambique"
+title: "MALTEM PROJECT: Procedures and analysis plan - Quantifying the economic benefits of privately funded malaria control interventions in Maragra, Mozambique"
 author: 
-  - Joe Brew
-  - Laia Cirera
-  - Elisa Sicuri  
+  - Elisa Sicuri +
+  - Joe Brew +
+  - Pedro Aide +
+  - Sergio Alonso +
+  - Eusebio Macete +
+  - Inácio Mandomando +
+  - Quique Bassat +
+  - Pedro Alonso +
+  - John Smith ++ 
+  - Jane Smith ++
+  - Kizito Gondo +++
 csl: health-economics-policy-and-law.csl
 output:
   pdf_document:
@@ -42,6 +50,8 @@ options(xtable.comment = FALSE)
 ```
 
 
+
+
 \begin{changemargin}{3cm}{3cm} 
 
 \begin{center}
@@ -51,6 +61,13 @@ options(xtable.comment = FALSE)
 \emph{The eradication of malaria could be accelerated by enlisting multiple non-governmental actors, including large private firms operating in endemic regions. Participation, however, relies on a clear and accurate quantification of the cost and impact of malaria control activities on economic output. This project proposes to use the case of the sugar mill of Maragra Açucar CA (southern Mozambique) to assess the impact of privately-managed indoor residual spraying on workers' economic output (in terms of both absenteeism and productivity). This document gives an overview of both the plan for data collection and analysis.}
 
 \end{changemargin}
+
+\vfill  
+
+( + Researchers specific to this sub-project )  
+( ++ Over-arching project - MALTEM - associated researchers )  
+( +++ Maragra Açucar CA )
+
 
 \newpage
 
