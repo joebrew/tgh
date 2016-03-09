@@ -11,7 +11,11 @@ author:
   - Pedro Alonso +
   - John Smith ++ 
   - Jane Smith ++
-  - Kizito Gondo +++ 
+  - Baltazar Candrinho ++
+  - Beatriz Galatas ++
+  - Francisco Saute ++
+  - Kizito Gondo +++
+  - Elton Dorkkin +++
 csl: health-economics-policy-and-law.csl
 output:
   pdf_document:
@@ -70,7 +74,7 @@ t1 <- read_csv('table_1.csv')
 \vfill  
 
 ( + Researchers specific to this sub-project )  
-( ++ Over-arching project - MALTEM - associated researchers )  
+( ++ Over-arching project - MALTEM economic protocol associated researchers )  
 ( +++ Maragra Açucar CA )
 
 
