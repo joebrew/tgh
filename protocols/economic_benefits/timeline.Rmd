@@ -1,5 +1,6 @@
 ---
-title: "MALTEM PROJECT: Quantifying the economic impact of malaria control interventions in Maragra, Mozambique: a win-win for private industry and public health"
+title: "MALTEM PROJECT: Quantifying the economic impact of malaria control interventions in Maragra, Mozambique: TIMELINE
+"
 author: 
   - Elisa Sicuri +
   - Joe Brew +

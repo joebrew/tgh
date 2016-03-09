@@ -1,0 +1,115 @@
+---
+title: Requested amendment to "Protocol for the Economic Benefits of MALTEM in Southern Mozambique"
+author: 
+  - Elisa Sicuri +
+  - Joe Brew +
+  - Pedro Aide +
+  - Sergio Alonso +
+  - Eusebio Macete +
+  - Inácio Mandomando +
+  - Quique Bassat +
+  - Pedro Alonso +
+  - Baltazar Candrinho ++
+  - Beatriz Galatas ++
+  - Francisco Saute ++
+  - Kizito Gondo +++
+  - Elton Dorkkin +++
+csl: health-economics-policy-and-law.csl
+output:
+  pdf_document:
+    includes:
+      in_header: style.sty
+  html_document: default
+highlight: zenburn
+latex_engine: xelatex
+bibliography: library.bib
+---
+
+
+
+
+```{r, echo=FALSE, comment=NA, message=FALSE, warning=FALSE} 
+#libraries
+library(ggmap)
+library(ggplot2)
+library(grid)
+library(dplyr)
+library(knitr)
+library(ggthemes)
+library (rgdal)
+library(RColorBrewer)
+library(maptools)
+opts_chunk$set(comment = NA, message = FALSE, echo = FALSE, results = 'hide', fig.height = 3.5, warning = FALSE)
+```
+
+```{r}
+suppressWarnings(library(xtable))
+options(xtable.comment = FALSE)
+```
+
+```{r}
+# source('helpers.R')
+```
+
+```{r}
+library(readr)
+t1 <- read_csv('table_1.csv')
+```
+
+
+
+\begin{changemargin}{3cm}{3cm} 
+
+\begin{center}
+\textbf{Summary}
+\end{center}
+
+\emph{This document consists of a formal request to make two minor alterations to the "Protocol for the Economic Benefits of MALTEM in Southern Mozambique", which has already been approved by the Comité Científico Interno and the Comité Institucional de Bioética para Saúde do CISM'}
+
+\end{changemargin}
+
+
+\vfill  
+
+( + Researchers specific to this sub-project )  
+( ++ Over-arching project - MALTEM economic protocol associated researchers )  
+( +++ Maragra Açucar CA )
+
+
+
+\newpage
+
+Dear Sir/Madame,
+
+I am writing to request two minor amendments to the "Protocol for the Economic Benefits of MALTEM in Southern Mozambique". The changes which I am requesting are small, and have already been approved by the Scientific Committee.
+
+**First request: Include Maragra Açucar CA as a study site:** 
+
+The initial protocol approved by the ethical committee included the district of the Manhiça in the study, and explicitly named the açucarera of Xinavane (in Magude) for the study of worker absenteeism. However, in the initial protocol, the açucarera of Maragra (Ilovo) was not named explicitly, even though the scientific committee had already approved the inclusion of the Maragra açucarera in the study.  
+
+Therefore, we request to include the açucarera of Maragra in the study. The same procedures and data that applied to Xinavane will also apply to Maragra, with no further modifications.
+
+
+**Second request: Add Joe Brew to the protocol:** 
+
+Joe Brew (MPH, MA) is an Transdisciplinary Global Health programme researcher conducting his PhD through ISGlobal under the direction of Elisa Sicuri. He is already involved in the analysis of MALTEM economic data. He will be the person "on-the-ground" carrying out the Maragra component of the research. He will be instrumental in all phases of the analysis, including data collection, data cleaning, analysis, manuscript writing, and internal reporting.   
+
+Therefore, we request to include Joe Brew as a co-investigator in the "Protocol for the Economic Benefits of MALTEM in Southern Mozambique".
+
+
+\vspace{5mm}
+
+Thank you very much for your consideration.
+
+Sincerely,
+
+\vspace{10mm}
+
+
+Dr. Elisa Sicuri  
+ISGlobal
+
+
+
+\newpage
+

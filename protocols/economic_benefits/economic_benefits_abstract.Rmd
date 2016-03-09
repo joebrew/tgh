@@ -1,9 +1,19 @@
 ---
 title: "Abstract: Quantifying the economic benefits of privately funded malaria control interventions in Maragra, Mozambique"
 author: 
-  - Joe Brew*
-  - Laia Cirera*
-  - Elisa Sicuri*  
+  - Elisa Sicuri +
+  - Joe Brew +
+  - Pedro Aide +
+  - Sergio Alonso +
+  - Eusebio Macete +
+  - Inácio Mandomando +
+  - Quique Bassat +
+  - Pedro Alonso +
+  - Baltazar Candrinho ++
+  - Beatriz Galatas ++
+  - Francisco Saute ++
+  - Kizito Gondo +++
+  - Elton Dorkkin +++ 
 csl: health-economics-policy-and-law.csl
 output:
   pdf_document:

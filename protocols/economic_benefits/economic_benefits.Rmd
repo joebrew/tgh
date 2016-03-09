@@ -9,8 +9,6 @@ author:
   - Inácio Mandomando +
   - Quique Bassat +
   - Pedro Alonso +
-  - John Smith ++ 
-  - Jane Smith ++
   - Baltazar Candrinho ++
   - Beatriz Galatas ++
   - Francisco Saute ++
