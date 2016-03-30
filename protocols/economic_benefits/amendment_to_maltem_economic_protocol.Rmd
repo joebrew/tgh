@@ -2,6 +2,7 @@
 title: Requested amendment to "Protocol for the Economic Benefits of MALTEM in Southern Mozambique"
 author: 
   - Elisa Sicuri +
+  - Laia Cirera Crivillé +
   - Joe Brew +
   - Pedro Aide +
   - Sergio Alonso +

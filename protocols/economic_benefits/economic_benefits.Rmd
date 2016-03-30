@@ -3,6 +3,7 @@ title: 'MALTEM PROJECT: Procedures and analysis plan - Quantifying the economic 
   of privately funded malaria control interventions in Maragra, Mozambique'
 author:
 - Elisa Sicuri +
+- Laia Cirera Crivillé +
 - Joe Brew +
 - Pedro Aide +
 - Sergio Alonso +
@@ -17,11 +18,11 @@ author:
 - Elton Dorkkin +++
 csl: health-economics-policy-and-law.csl
 output:
-  word_document: default
   pdf_document:
     includes:
       in_header: style.sty
   html_document: default
+  word_document: default
 latex_engine: xelatex
 highlight: zenburn
 bibliography: library.bib
