@@ -1,0 +1,192 @@
+\documentclass{article}
+
+\usepackage{style}
+
+
+\begin{document}
+
+\SweaveOpts{concordance=TRUE}
+
+\vspace{20mm}
+
+
+\begin{Huge}
+\begin{center}
+\textbf{Systematic Review Protocol: The direct effect of malaria control on productivity: a systematic review}
+\end{center}
+\end{Huge}
+
+
+
+\vspace{5mm}
+
+\begin{changemargin}{2.5cm}{2.5cm} 
+\begin{center}
+\begin{large}
+Joe Brew \hfill \emph{joe.brew@isglobal.org} \\
+Laia Cirera Crivillé \hfill \emph{laia.cirera@isglobal.org} \\ 
+Elisa Sicuri \hfill \emph{elisa.sicuri@isglobal.org} \\ 
+\end{large}
+\end{center}
+\end{changemargin}
+
+
+\vspace{6mm}
+
+\begin{center}
+\begin{large}
+Institut de Salut Global de Barcelona 
+\end{large}
+\end{center}
+
+
+\begin{changemargin}{3cm}{3cm} 
+
+\begin{center}
+\textbf{Summary}
+\end{center}
+
+\emph{The eradication of malaria could be accelerated by enlisting multiple non-governmental actors, including large private firms operating in endemic regions. Participation, however, relies on a clear and accurate quantification of the cost and impact of malaria control activities on economic output. This project proposes to use the case of the sugar mill of Maragra Açucar CA (southern Mozambique) to assess the impact of privately-managed indoor residual spraying on workers' economic output (in terms of both absenteeism and productivity). This document gives an overview of both the plan for data collection and analysis.}
+
+\end{changemargin}
+
+\vfill  
+
+
+\section*{Background}
+
+\subsection*{The Problem, Condition or Issue}
+
+
+The economic effect of infection with malaria is poorly understood, but establishing the cost-effectiveness of malaria control interventions is crucial, particularly in light of the fact that malaria disproportionately impacts low-income countries. Though macro-level analyses suggest that a reduction in malaria's burden could be causally associated with increased economic growth \cite{Sachs2002}, the direct impact on worker productivity is unclear. \\
+
+
+Public health authorities are interested in quantifying the overall effect of malaria control on worker health, as measured in DALY's, QALY's, and other metrics of morbidity and mortality. But quantifying the short-term and direct impact of malaria infection (or, inversely, prevention) on a worker's productivity is a more useful and actionable metric for those who finance malaria control activities outside of the public sector, especially private firms. Much of the available literature on the topic of malaria's economic burden is either exclusively macroeconomic (overly general) or narrowly understands costs to be only the value of work-time lost, as translated to worker wages (overly specific)\cite{Chima2003}. A critical and systematic review of available evidence on the totality of direct costs related to malaria and its control is sorely needed, and would serve not only to further the scientific discussion regarding the economics of malaria, but could inform the advisability and sustainability of interventions carried out by both the private and public sectors. 
+
+\subsection*{The Intervention}
+
+Define the intervention and its components. Define all terms and intervention components clearly and try to set a tone that does not pre-judge the value of the intervention. Provision of examples of the intervention and its components here will help the reader gain a better understanding of the intervention under review. Outline possible variations of the intervention. What is given, by whom, and for how long?
+
+\subsection*{How the Intervention Might Work}
+
+In this section, briefly identify the theoretical underpinnings and refer to literature that identifies a potential pathway of effect between intervention and outcomes. Describe the mechanisms by which the intervention is expected to bring about the expected changes in the outcomes. You might wish to include a logic model here which shows the connections between the intervention and outcomes. A logic model should define the intervention of interest and its components, specify important outcomes, and indicate intermediate outcomes or pathways through which the intervention is intended to affect the outcomes. The logic model may also be used to provide a logical rationale for why only a component of an intervention is being reviewed (and point to where other reviews may need to be carried out to complete the evidence picture). 
+
+\subsection*{Why it is Important to do the Review}
+
+Clearly describe the justification for doing the review. Why is the review needed? This section should include two main components.
+First, you should include a discussion here of existing and ongoing primary research, narrative and systematic reviews, and meta-analyses on the topic, to highlight what has been learned from past efforts as well as to point out any inconsistencies, methodological strengths and weaknesses, and evidence “gaps” that still remain. The contribution of your planned review should be emphasized by clearly stating the unresolved questions and controversies that will be addressed. \\  
+Second, to instruct the end-user on the potential application of review findings, include a brief statement on how this could inform practice or policy decisions. \\  
+
+\section*{Objectives}
+Briefly outline the objectives of the proposed review. Systematic reviews can be undertaken for a number of reasons. For example, reviews can be conducted to (a) produce general statements about relationships and treatment effects through the synthesis of individual study results, (b) find reasons for conflicting evidence, (c) answer questions, using variations in studies, that could not have been answered in the individual component studies, (d) explain variations in practice, (e) review the evidence on the subjective experience of an intervention, and/or (f) build connections between related areas of research. While Campbell systematic reviews might be motivated by any of these and other reasons, their overarching aim should be to gather, summarize and integrate empirical research so as to help people understand the evidence. \\
+
+In setting out the objectives, reviewers should keep in mind that Campbell systematic reviews should help people make practical decisions about social and behavioural interventions and public policy. This has important implications for deciding whether and how to undertake a Campbell systematic review, how to formulate the problem that a review will address, how to develop the protocol and how to present the results of the review. The objectives of a review should address the choices (practical options) people face when deciding about whether or not to adopt a policy or practice. Reviews should address outcomes that are meaningful to people making decisions about public policy.  
+
+\section*{Methodology}
+
+Note: when completing this section, please refer to the Campbell Collaboration Guidelines on Systematic Review Methods [document in progress]. At a minimum, this section should include the following information:  
+I. Criteria for including studies in the review:
+a. What types of studies designs are to be included and excluded? Please describe eligible study designs, control/comparison groups, measures, and duration of follow-ups.
+b. Types of participants
+c. Types of interventions
+d. Types of outcome measures
+e. Any exclusion criteria?
+II. Search Strategy: briefly describe the anticipated search strategy
+III. Description of methods used in primary research
+IV. Criteria for determination of independent findings
+V. Details of study coding categories (including methodological quality or risk of bias coding)
+VI. Statistical procedures and conventions
+VII. Treatment of qualitative research
+
+\section*{Table example}
+
+\section*{References}
+
+
+APA style (6th edition). Include DOI numbers where appropriate.
+Bibliography
+
+\section*{Sources of Support}
+
+Describe the source(s) of support for the proposed review. 
+
+\section*{Declarations of interest}
+
+Please declare any potential conflicts of interest.
+
+\section*{Review authors}
+
+Lead review author:
+The lead author is the person who develops and co-ordinates the review team, discusses and assigns roles for individual members of the review team, liaises with the editorial base and takes responsibility for the on-going updates of the review.
+Name:
+
+Title:
+
+Affiliation:
+
+Address:
+
+City, State, Province or County:
+
+Postal Code:
+
+Country:
+
+Phone:
+
+Mobile:
+
+Email:
+
+
+Co-author(s): (There should be at least one co-author)
+Name:
+
+Title:
+
+Affiliation:
+
+Address:
+
+City, State, Province or County:
+
+Postal Code:
+
+Country:
+
+Phone:
+
+Mobile:
+
+Email:
+
+Duplicate the above table as necessary to include all co-authors.
+10 Roles and responsibliities
+Please give brief description of content and methodological expertise within the review team. The recommended optimal review team composition includes at least one person on the review team who has content expertise, at least one person who has methodological expertise and at least one person who has statistical expertise. It is also recommended to have one person with information retrieval expertise. 
+Who is responsible for the below areas? Please list their names:
+•	Content:
+•	Systematic review methods: 
+•	Statistical analysis: 
+•	Information retrieval:
+11 PrelimiNary timeframe 
+Approximate date for submission of the systematic review (please note this should be no longer than 2 years after protocol approval. If the review is not submitted by then, the review area may be opened up for other authors).
+12 Plans for Updating the Review
+Reviews should include in the protocol specifications for how the review, once completed, will be updated. This should include, at a minimum, information on who will be responsible and the frequency with which updates can be expected.
+13 Authors’ Responsibilities
+By completing this form, you accept responsibility for preparing, maintaining and updating the review in accordance with Campbell Collaboration policy. The Campbell Collaboration will provide as much support as possible to assist with the preparation of the review. 
+A draft review must be submitted to the relevant Coordinating Group within two years of protocol publication. If drafts are not submitted before the agreed deadlines, or if we are unable to contact you for an extended period, the relevant Coordinating Group has the right to de-register the title or transfer the title to alternative authors. The Coordinating Group also has the right to de-register or transfer the title if it does not meet the standards of the Coordinating Group and/or the Campbell Collaboration. 
+You accept responsibility for maintaining the review in light of new evidence, comments and criticisms, and other developments, and updating the review at least once every five years, or, if requested, transferring responsibility for maintaining the review to others as agreed with the Coordinating Group.
+14 Publication in the Campbell Library
+The support of the Campbell Collaboration and the relevant Coordinating Group in preparing your review is conditional upon your agreement to publish the protocol, finished review and subsequent updates in the Campbell Library. Concurrent publication in other journals is encouraged. However, a Campbell systematic review should be published either before, or at the same time as, its publication in other journals. Authors should not publish Campbell reviews in journals before they are ready for publication in the Campbell Library. Authors should remember to include a statement mentioning the published Campbell review in any non-Campbell publications of the review.
+I understand the commitment required to undertake a Campbell review, and agree to publish in the Campbell Library. Signed on behalf of the authors:
+Form completed by:
+Date: 
+
+
+\bibliography{library}{}
+\bibliographystyle{plain}  
+
+
+
+
+\end{document}
