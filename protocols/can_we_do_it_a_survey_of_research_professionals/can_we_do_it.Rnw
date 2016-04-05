@@ -12,7 +12,7 @@
 
 \begin{Huge}
 \begin{center}
-\textbf{Can we do it? A survey of research professionals on the feasibility of eliminating neglected tropical diseases}
+\textbf{Can we do it? A systematic and reproducible survey of research professionals on the perceived feasibility of and obstacles to eliminating neglected tropical diseases and malaria}
 \end{center}
 \end{Huge}
 
@@ -46,7 +46,7 @@ Institut de Salut Global de Barcelona
 \textbf{Summary}
 \end{center}
 
-\emph{In recent years, much of the discourse regarding neglected tropical diseases has shifted from "control" to "eradication." The emphasis on elimination serves to rally funder support, motivate researchers, and focus the efforts of public health practitioners. Proponents of disease eradication point to the success of historical and current campaigns (smallpox and polio, respectively), and highlight the benefits in health and wealth to future generations. However, obstacles to eradication remain. In a systematic survey of experts in the field of neglected tropical diseases (NTDs), we query beliefs regarding the feasibility,  advisability and timeframe of eradication, as well as the chief obstacles faced by those striving to eradicate NTDs. We devise a pessimism-optimism index (POI), broken down by academic discipline, researcher impact, and years of experience. Our results serve as a barometer of professional opinion, and identify areas of research where experts in the field expect the most resistance.}
+\emph{In recent years, much of the discourse regarding neglected tropical diseases has shifted from "control" to "eradication." The emphasis on elimination serves to rally funder support, motivate researchers, and focus the efforts of public health practitioners. Proponents of disease eradication point to the success of historical and current campaigns (smallpox and polio, respectively), and highlight the benefits in health and wealth to future generations. However, obstacles to eradication remain. In a systematic survey of experts in the field of neglected tropical diseases (NTDs), we query beliefs regarding the feasibility,  advisability and timeframe of eradication, as well as the chief obstacles faced by those striving to eradicate NTDs. We assess pessimism/optimism (via the proxy of years-to-eradication), broken down by academic discipline, researcher impact, and years of experience. Our results serve as a barometer of professional opinion, and identify areas of research where experts in the field expect the most resistance.}
 
 \end{changemargin}
 
