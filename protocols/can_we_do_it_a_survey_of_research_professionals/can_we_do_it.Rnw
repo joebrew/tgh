@@ -1,0 +1,58 @@
+\documentclass{article}
+
+\usepackage{style}
+
+
+\begin{document}
+
+\SweaveOpts{concordance=TRUE}
+
+\vspace{20mm}
+
+
+\begin{Huge}
+\begin{center}
+\textbf{Can we do it? A survey of research professionals on the feasibility of eliminating neglected tropical diseases}
+\end{center}
+\end{Huge}
+
+
+
+\vspace{5mm}
+
+\begin{changemargin}{2.5cm}{2.5cm} 
+\begin{center}
+\begin{large}
+Celine Aerts \hfill \emph{celine.aerts@isglobal.org } \\ 
+Joe Brew \hfill \emph{joe.brew@isglobal.org} \\
+Elisa Sicuri \hfill \emph{elisa.sicuri@isglobal.org} \\ 
+\end{large}
+\end{center}
+\end{changemargin}
+
+
+\vspace{6mm}
+
+\begin{center}
+\begin{large}
+Institut de Salut Global de Barcelona 
+\end{large}
+\end{center}
+
+
+\begin{changemargin}{3cm}{3cm} 
+
+\begin{center}
+\textbf{Summary}
+\end{center}
+
+\emph{In recent years, much of the discourse regarding neglected tropical diseases has shifted from "control" to "eradication." The emphasis on elimination serves to rally funder support, motivate researchers, and focus the efforts of public health practitioners. Proponents of disease eradication point to the success of historical and current campaigns (smallpox and polio, respectively), and highlight the benefits in health and wealth to future generations. However, obstacles to eradication remain. In a systematic survey of experts in the field of neglected tropical diseases (NTDs), we query beliefs regarding the feasibility,  advisability and timeframe of eradication, as well as the chief obstacles faced by those striving to eradicate NTDs. We devise a pessimism-optimism index (POI), broken down by academic discipline, researcher impact, and years of experience. Our results serve as a barometer of professional opinion, and identify areas of research where experts in the field expect the most resistance.}
+
+\end{changemargin}
+
+\vfill  
+
+
+
+
+\end{document}
