@@ -1,0 +1,101 @@
+\documentclass{article}
+
+\usepackage{style}
+
+
+\begin{document}
+
+\SweaveOpts{concordance=TRUE}
+
+\vspace{20mm}
+
+
+\begin{Huge}
+\begin{center}
+\textbf{Identifying hotspots of malnutrition and diarrhoeal disease in Manhiça, Mozambique}
+\end{center}
+\end{Huge}
+
+
+
+\vspace{5mm}
+
+\begin{changemargin}{2.5cm}{2.5cm} 
+\begin{center}
+\begin{large}
+Quique Bassat \hfill \emph{quique.bassat@isglobal.org} \\ 
+Joe Brew \hfill \emph{joe.brew@isglobal.org} \\
+\end{large}
+\end{center}
+\end{changemargin}
+
+
+\vspace{6mm}
+
+\begin{center}
+\begin{large}
+Centro de Investigaçao em Saude de Manhiça \\ 
+Institut de Salut Global de Barcelona 
+\end{large}
+\end{center}
+
+
+\begin{changemargin}{3cm}{3cm} 
+
+\begin{center}
+\textbf{Summary}
+\end{center}
+
+\emph{Diarrhoeal illness and malnutrition are major causes of infant and child mortality. Using geographic information systems and statistical modelling to identify spatial and temporal areas of risk can help elucidate social risk factors as well as guide public health interventions. We propose to examine historical data on the incidence of diarrhoea and malnutrition in patients under five years old in Manhiça in order to map risk, identify hotspots, describe associated factors, and generate predictive estimates of disease activity.}
+
+\end{changemargin}
+
+\vfill  
+
+\newpage
+
+
+\section*{Background} 
+Diarrhoea and malnutrition are among the chief contributing factors to the high rates of infant and child mortality in Mozambique. But risk is not distributed evenly among the population, nor across time. There may exist geographical "hotspots" and temporal "peaks" at which risk is greatest. The identification and understanding of these areas and periods of greatest risk could lead to effective preventive interventions, thereby saving lives and improving the health of children.
+
+\section*{Objectives}
+
+The \textbf{primary} objective of this study is to identify hotspots of risk for infant and child diarrhoeal illness and malnutrition in Manhiça, Mozambique. \\
+
+\noindent The \textbf{secondary} objectives of this study are to:
+\begin{itemize}
+  \setlength\itemsep{-0.2em}
+\item Produce risk maps of scientific and public health utility
+\item Create a reproducible research approach using transparent methods, so as to be generalizable to other diseases and areas
+\item Gain understanding of and estimate the magnitude of differntial risk for diarrhoea and malnutrition across space and time, accounting for (and quantifying) non spatiotemporal factors
+\end{itemize}
+
+\section*{Methods and Design}
+We will retrieve (pre-existing) data from both the census and the Manhiça Hospital in order to estimate both the incidence of malnutrition and diarrhoeal disease, as well as to understand (in terms of geography, timing, and sociodemographic factors) the population at risk. Following data retrieval we will model the likelihood of our two outcomes (malnutrition, diarrhoeal disease) as a function of geography using spatial scan statistics, Bernoulli modeling, and kernel density estimation. Next, we will complement our (purely) spatial estimates with time series analyses (namely, the Kulldorf combinatory method) so as to assess seasonality and differential risk over time. Finally, we will adjust our model for the sociodemographic and economic characteristics of the population, so as to identify both unadjusted and adjusted "hotspots" of risk, and to better understand the role of location, precipitation, seasonality, and other characteristics in determining a child's risk for malnutrition and diarrhoea.
+
+\section*{Study implications}
+
+This study could be of high importance and utility to both (a) the scientific and (b) public health communities. In regards to the former, we will use exclusively open-source software, making our analysis both reproducible in the future, as well as for different diseases and contexts. In regards to the latter, the results of our analysis could improve preventive public health interventions.
+
+\section*{Ethical considerations}
+
+All data will be secondary, and no new data will be generated for this project. We foresee no ethical issues.
+
+\section*{Examples of potential knowledge products}
+
+\begin{center}
+
+\includegraphics{map4.pdf} \\
+
+
+% \includegraphics{map00.pdf} \\
+
+\includegraphics{map0.pdf} \\
+
+\includegraphics{map1.pdf} \\
+
+\includegraphics{map2.pdf}
+
+\end{center}
+
+\end{document}
