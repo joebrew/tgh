@@ -1,4 +1,34 @@
 library(ggplot2)
+library(dplyr)
+library(RColorBrewer)
+
+# Approximation of timelines to eradication
+diseases <- 
+  c('Leish',
+    'HAT',
+    'LF',
+    'Chagas',
+    'Schisto',
+    'Malaria')
+df <- data.frame(disease = rep(diseases, each = 100),
+                 val = NA)
+for (i in diseases){
+  adder <- sample(1:100, 1, prob = 100:1)
+  df$val[df$disease == i] <- 
+    rnorm(n = 100, mean = adder, sd = 40)
+}
+df$val <-
+  ifelse(df$val > 100 | df$val < 0,
+         sample(1:100, 1),
+         df$val)
+ggplot(data = df,
+       aes(x = val)) +
+  geom_density(fill = 'blue', alpha = 0.3, color = 'black') +
+  facet_wrap(~disease, nrow = 3) +
+  xlab('Perceived years until eradication') +
+  ylab('Density') +
+  ggtitle('Perceptions of years until eradication')
+
 
 # Worker prestige and years to eradication
 x <- seq(0, 100, length = 1000)
@@ -123,8 +153,7 @@ df <- expand.grid(discipline = disciplines,
                   area = areas)
 df$p <- sample(seq(0, 100, length = 10000),nrow(df))
 
-library(dplyr)
-library(RColorBrewer)
+
 df <- 
   df %>%
   group_by(discipline, disease) %>%
