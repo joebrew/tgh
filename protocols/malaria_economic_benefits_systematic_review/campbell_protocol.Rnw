@@ -12,7 +12,7 @@
 
 \begin{Huge}
 \begin{center}
-\textbf{Systematic Review Protocol: The direct effect of malaria control on productivity: a systematic review}
+\textbf{Systematic Review Protocol: The microeconomic effect of malaria control interventions}
 \end{center}
 \end{Huge}
 
@@ -117,55 +117,53 @@ This review has one \textbf{primary} objective: \\
 
 \subsection*{Criteria for including studies in the review}
 
-\noindent \textbf{Inclusion criteria} \\
+\vspace{-2mm}
 
 
 \begin{itemize}
-\item \emph{Study design}
-\item \emph{Timeframe}
-\item \emph{Geography}
-\item \emph{Control/comparison}
-\item \emph{Measures}
-\item \emph{Duration of follow-up}
-\item \emph{Types of interventions}
-\item \emph{Types of participants}
-\item \emph{Measures}
-\item \emph{Types of outcome measures}
+  \setlength\itemsep{-1em}
+
+\item \emph{Interventions} We count as a "malaria control intervention" any systematic, organized, planned and documented campaign involving distribution of insecticide-treated bed nets (ITNs), indoor residual spraying (IRS) of buildings, mass drug administration (MDA), larval control (LC), biological control (BC) in any of its forms, area spraying (AS), pre-exposure prophylasis (PEP) and, more recently, the malaria vaccine (MV). \\
+\item \emph{Geography} We include studies which took place in areas which were estimated to be holendemic, hyperendemic, mesoendemic and hypoendemic at the time of intervention/study, as measured by spleen rate parasite prevence and defined by \cite{Hay2008}. \\
+\item \emph{Study design} Studies included in the review can be experimental, quasi-experimental, or observational (with the latter category constituting the greatest majority, given the nature of population-level interventions). "Control" conditions/groups are understood as the health status (and corresponding economic characteristics) of comparable populations who were not targeted by the intervention, or the intervened populations in the period immediately prior to the intervention. \\ 
+\item \emph{Timeframe} We include any study that took place since 1990. \\
+\item \emph{Measures} We include studies which report measures of either (a) likelihood and severity/duration of illness as a function of intervention, (b) absenteeism of students, (c) absenteeism of workers, and (d) productivity of workers. In the case of only (a) we average the economic effect of other studies so as to estiate the economic effect as a function of illness likelihood, severity and duration. \\
+\item \emph{Duration of follow-up} We include studies which follow the target population for a period of at least one "season" (in the case of seasonal malaria) or one year (in the case of year-round transmission). \\
+\item \emph{Exclusion criteria} We include no qualitative studies, no "grey literature", no meta-analyses or systematic reviews, and no non-peer reviewed papers.
 \end{itemize}
-
-
-\noindent \textbf{Exclusion criteria} \\
 
 
 \subsection*{Search Strategy}
 
-\noindent \textbf{} \\
-\noindent \textbf{} \\
+\noindent \textbf{Database} For the purposes of simplicity and reproducibility, we will exclusively use the PubMed database. \\
+
+\noindent \textbf{Title keywords} The title of any included work must contain the word "malaria". \\
+
+\noindent \textbf{Abstract keywords} The abstract of any included work must contain either the word "intervention" or "campaign", or one of the specific descriptors for an intervention:  
+
+<<eval=FALSE>>=
+'"insecticide-treated bed net" OR "bednet" OR "ITN" OR 
+"INDOOR RESIDUAL SPRAYING" OR "IRS" OR "MASS DRUG ADMINISTRATION" OR 
+"MDA" OR "larval control" OR "larvicide" OR "biological control" OR 
+"genetic modification" OR "area spraying" OR "fumigation" OR 
+"prophylaxis" OR "vaccine"'
+@
+
+\noindent \textbf{Filtering} After having retrieved all articles with the above search strategy, manual filtering will be applied to keep only those articles with health outcomes (as measured in likelihood [attack rate, incidence, etc.] and severity/duration of disease, for later translation to economic outcomes), or direct economic outcomes.
+
+\subsection*{Details of study coding categories} 
+
+All studies will be "coded" according to (a) geographic location, (b) time frame, (c) target population (infant, child, adult, pregnant women), (d) intervention type, and (e) study type. In any case in which the coding may have been subjective or was not explicitly indicated by the study authors, a study will be flagged as "coding potentially subjective".
 
 
-\subsection*{Description of methods used in primary research}
-
-
-\subsection*{Criteria for determination of independent findings}
-
-
-\subsection*{Details of study coding categories (including methodological quality or risk of bias coding)}
-
-\subsection*{Statistical procedures and conventions}
-
-\subsection*{Treatment of qualitative research}
-
-
-
-\section*{Table example}
 
 \section*{Sources of Support}
 
-Describe the source(s) of support for the proposed review. 
+This systematic review will be undertaken in the context of the doctoral research of Joe Brew, who is enrolled in the Transdisciplinary Global Health programme, an Erasmus Mundus doctorate funded by the European Commission. 
 
 \section*{Declarations of interest}
 
-Please declare any potential conflicts of interest.
+The authors declare no potential conflicts of interest.
 
 \section*{Review authors}
 
@@ -180,7 +178,7 @@ Postal Code: 08036\\
 Country: Spain\\
 Phone: +34 666 66 80 86\\
 Email: joe.brew@isglobal.org\\
-Role: Retrieval and statistical expertise\\
+Role: Retrieval and statistical expertise
 
 
 \subsection*{Co-authors}
@@ -193,7 +191,7 @@ City, State, Province or County: Barcelona\\
 Postal Code: 08036\\
 Country: Spain\\
 Email: laia.cierera@isglobal.org\\
-Role: Content expertise\\
+Role: Content expertise
 
 
 \vspace{5mm}
@@ -223,24 +221,6 @@ Role: Methodological expertise\\
 \section*{Plans for updating the review} 
 
 The review will be updated, using identical methods, every two years, beginning in November 2018 (two years after initial submission for publication). Joe Brew will be responsible for coordinating updates.
-
-\section*{Authors’ Responsibilities}
-By completing this form, you accept responsibility for preparing, maintaining and updating the review in accordance with Campbell Collaboration policy. The Campbell Collaboration will provide as much support as possible to assist with the preparation of the review. \\
-
-\noindent A draft review must be submitted to the relevant Coordinating Group within two years of protocol publication. If drafts are not submitted before the agreed deadlines, or if we are unable to contact you for an extended period, the relevant Coordinating Group has the right to de-register the title or transfer the title to alternative authors. The Coordinating Group also has the right to de-register or transfer the title if it does not meet the standards of the Coordinating Group and/or the Campbell Collaboration. \\
-
-\noindent You accept responsibility for maintaining the review in light of new evidence, comments and criticisms, and other developments, and updating the review at least once every five years, or, if requested, transferring responsibility for maintaining the review to others as agreed with the Coordinating Group.
-
-\section*{Publication in the Campbell Library}
-
-The support of the Campbell Collaboration and the relevant Coordinating Group in preparing your review is conditional upon your agreement to publish the protocol, finished review and subsequent updates in the Campbell Library. Concurrent publication in other journals is encouraged. However, a Campbell systematic review should be published either before, or at the same time as, its publication in other journals. Authors should not publish Campbell reviews in journals before they are ready for publication in the Campbell Library. Authors should remember to include a statement mentioning the published Campbell review in any non-Campbell publications of the review. \\
-
-
-\noindent I understand the commitment required to undertake a Campbell review, and agree to publish in the Campbell Library. Signed on behalf of the authors: \\
-
-\vspace{10mm}
-\noindent Form completed by:\\
-\noindent Date: 
 
 
 \bibliography{library}{}
