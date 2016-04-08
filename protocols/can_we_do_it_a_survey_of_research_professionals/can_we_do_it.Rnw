@@ -19,7 +19,7 @@ Literature review and research protocol
 
 \begin{large}
 \begin{center}
-\textbf{Can we do it? A systematic and reproducible survey of research professionals on the perceived feasibility of and obstacles to eliminating neglected tropical diseases and malaria using a “wisdom of crowds” approach} 
+\textbf{Can we do it? A systematic and reproducible survey of research professionals on the perceived feasibility of and obstacles to eliminating malaria using a “wisdom of crowds” approach} 
 \end{center}
 \end{large}
 
@@ -29,8 +29,8 @@ Literature review and research protocol
 \begin{changemargin}{2.5cm}{2.5cm} 
 \begin{center}
 \begin{large}
-Celine Aerts \hfill \emph{celine.aerts@isglobal.org } \\ 
 Joe Brew \hfill \emph{joe.brew@isglobal.org} \\
+Celine Aerts \hfill \emph{celine.aerts@isglobal.org } \\ 
 Elisa Sicuri \hfill \emph{elisa.sicuri@isglobal.org} \\ 
 \end{large}
 \end{center}
@@ -52,7 +52,7 @@ Institut de Salut Global de Barcelona
 \textbf{Summary}
 \end{center}
 
-\emph{In recent years, much of the discourse regarding neglected tropical diseases has shifted from "control" to "eradication." The emphasis on elimination serves to rally funder support, motivate researchers, and focus the efforts of public health practitioners. Proponents of disease eradication point to the success of historical and current campaigns (smallpox and polio, respectively), and highlight the benefits in health and wealth to future generations. However, the opportunity cost of investments in eradication-specific interventions is high, and the expected value of these interventions is a function of their likelihood of success. In a systematic survey of experts in the field of neglected tropical diseases (NTDs), we query beliefs regarding the likelihood and time-frame of eradication, as well as the perceived chief obstacles faced by those striving to eradicate NTDs. We assess pessimism/optimism (via the proxy of years-to-eradication), broken down by academic discipline, researcher impact, and years of experience. Our results serve as a barometer of professional opinion, and identify areas of research where experts in the field expect the most resistance.}
+\emph{In recent years, much of the discourse regarding malaria has shifted from "control" to "eradication." The emphasis on elimination serves to rally funder support, motivate researchers, and focus the efforts of public health practitioners. Proponents of disease eradication point to the success of historical and current campaigns (smallpox and polio, respectively), and highlight the benefits in health and wealth to future generations. However, the opportunity cost of investments in eradication-specific interventions is high, and the expected value of these interventions is a function of their likelihood of success. In a systematic survey of experts in the field of malaria, we query beliefs regarding the likelihood and time-frame of eradication, as well as the perceived chief obstacles faced by those striving to eradicate We assess pessimism/optimism (via the proxy of years-to-eradication), broken down by academic discipline, researcher impact, and years of experience. Our results serve as a barometer of professional opinion, and identify areas of research where experts in the field expect the most resistance.}
 \end{changemargin}
 \vfill  
 
@@ -85,7 +85,7 @@ This document is divided into two sections:
 
 In recent years, researchers, public health agencies and funding organizations have become increasingly interested in transitioning from an approach of malaria "control" to one of "elimination" and "eradication".\cite{Tanner2015} Even in areas of high endemicity, advances in immunology, parasitology, modeling and vaccinology, along with rapid economic development, have made eradication appear a more feasible goal. \cite{Snow2015, Eckhoff2014}  \\
 
-\noindent The economic case for striving to achieve malaria eradication is compelling \cite{Barofsky2015} \\
+\noindent The economic case for striving to achieve malaria eradication is compelling \cite{Barofsky2015}. Though the case-specific marginal cost of prevention can be expected to be high (relative to a simple control approach), successful eradication would mean massive recurring savings in the long-term. \\
 
 \noindent Most of the current research on expert opinion regarding the feasibility of malaria eradication focuses on the \emph{how} rather than the \emph{if}.\cite{Tanner2015} 
 
@@ -109,7 +109,7 @@ In recent years, researchers, public health agencies and funding organizations h
 
 \noindent \textbf{The wisdom of crowds:} Patients often ask for a “second opinion”, a request which implicitly recognizes two important truths: (1) that an expert can sometimes be wrong and (2) that the combined opinions of multiple experts can better approximate the truth than the opinion of only one. As Sir Francis Galton demonstrated in his famous ox-weight experiment published in Nature1, averaging the opinions of many is more accurate than taking the opinion of any single expert, since the biases of diverse viewpoints can be complementary and symbiotic. \\
 
-\noindent \textbf{The value of forecasting:} In regards to disease eradication, proponents point to the potential ongoing returns on investment to future generations. But economically, the “expected value” of an investment in a binary scenario (eradication or not) is a function of the probability of the scenario’s occurrence, and the temporal lag of that occurrence. Therefore, knowing the likelihood and time-frame of eradication of NTDs and malaria is essential for making sound investments in health. \\
+\noindent \textbf{The value of forecasting:} In regards to disease eradication, proponents point to the potential ongoing returns on investment to future generations. But economically, the “expected value” of an investment in a binary scenario (eradication or not) is a function of the probability of the scenario’s occurrence, and the temporal lag of that occurrence. Therefore, knowing the likelihood and time-frame of eradication of malaria is essential for making sound investments in health. \\
 
 \noindent \textbf{Why this study:} Assessing likelihood and time-frame of eradication is too important of a task to be left to individuals or small panels and committees. It requires the “wisdom of crowds.” Measuring consensus and discord among disease-specific researchers from a variety of disciplines can serve as a barometer of (informed) opinion, both guiding resources and identifying areas of concern.
 
@@ -117,10 +117,10 @@ In recent years, researchers, public health agencies and funding organizations h
 \addcontentsline{toc}{subsection}{Objectives}
 
 
-In a systematic survey of experts in the fields of neglected tropical diseases and malaria, we will query perceptions regarding the feasibility and time-frame of eradication, as well as the perceived gaps and chief areas that need attention in order for eradication to occur. We will report on aggregate results, and our analysis will be broken down by disease, researcher academic discipline, impact and years of experience. \\
+In a systematic survey of experts in the fields of malaria, we will query perceptions regarding the feasibility and time-frame of eradication, as well as the perceived gaps and chief areas that need attention in order for eradication to occur. We will report on aggregate results, and our analysis will be broken down by disease, researcher academic discipline, impact and years of experience. \\
 
 
-\noindent Our principal objective is to measure the perceived likelihood/feasibility and time-frame of eradication of certain neglected tropical diseases and malaria among those who are professional researchers of those respective diseases, at a larger scale than any previous study. Our secondary objective is to examine the relationship between the perceived likelihood/feasibility of eradication of diseases with the respective attention allotted to them in both the popular and academic literature. Our tertiary objective is to establish which specific areas of knowledge are lacking through an examination of researcher characteristics (academic discipline, geography, etc.) insofar as those characteristics are associated with differential perceptions regarding time-to-eradication.
+\noindent Our principal objective is to measure the perceived likelihood/feasibility and time-frame of eradication of malaria among those who are professional researchers of those respective diseases, at a larger scale than any previous study. Our secondary objective is to examine the relationship between the perceived likelihood/feasibility of eradication of diseases with the respective attention allotted to them in both the popular and academic literature. Our tertiary objective is to establish which specific areas of knowledge are lacking through an examination of researcher characteristics (academic discipline, geography, etc.) insofar as those characteristics are associated with differential perceptions regarding time-to-eradication.
 
 
 \subsection*{Methods and Design}
@@ -161,13 +161,14 @@ We will only contact researchers whose information is publicly available online.
 
 
 \noindent Area expertise in malaria: Elisa Sicuri and Joe Brew \\
-\noindent Area expertise in NTDs: Elisa Sicuri and Celine Aerts \\
+\noindent Area expertise in economic evaluation: Elisa Sicuri \\
+\noindent Area expertise in computer-assisted article retrieval and surveying: Joe Brew \\
 
 
 \noindent \textbf{4. How does the proposal fit in with ISGlobal’s scientific agenda?} \\ 
 
 
-\noindent ISGlobal is a thought leader in the areas of both malaria and NTDs (research programmes in Chagas, and, increasingly, leishmaniasis) as well as their corresponding eradication movements. By using modern, technologically-oriented means to establish a “barometer” of international researcher consensus on the perceived feasibility and time-frame of eradication, ISGlobal would cement its position at the center of the ongoing international dialogue on the subject. Furthermore, given ISGlobal’s stake in eradication campaigns, the results of this study could (a) inform which disciplines and diseases have the most “research gaps” to be filled in order to achieve eradication, (b) identify areas of consensus and discord between different disciplines, (c) provide (crowd-informed) estimates of the timeline to eradication. \\
+\noindent ISGlobal is a thought leader in malaria, as well as its corresponding eradication movement. By using modern, technologically-oriented means to establish a “barometer” of international researcher consensus on the perceived feasibility and time-frame of eradication, ISGlobal would cement its position at the center of the ongoing international dialogue on the subject. Furthermore, given ISGlobal’s stake in eradication campaigns, the results of this study could (a) inform which disciplines and diseases have the most “research gaps” to be filled in order to achieve eradication, (b) identify areas of consensus and discord between different disciplines, (c) provide (crowd-informed) estimates of the timeline to eradication. \\
 
 \noindent \textbf{Budget estimation and expected source of funding for this study.} \\
 
