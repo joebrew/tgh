@@ -181,7 +181,7 @@ ggplot(data = combined %>%
   ggtitle(expression(atop('Papers containing "malaria" in title/abstract: 1945-present', 
                           atop(italic("Retrieved from PubMed"), "")))) +
   theme(legend.position = 'bottom')
-ggsave('chart1.pdf')
+ggsave('pubmed.pdf')
 
 ggplot(data = combined %>%
          filter(key == 'p'),
@@ -192,6 +192,6 @@ ggplot(data = combined %>%
   xlab('Year') +
   ylab('Percentage') +
   theme_bw() +
-  ggtitle(expression(atop('Papers containing "malaria" in title/abstract: 1945-present', 
-                          atop(italic('Papers which mention "eradication" or "elimination" in title/abstract, as % of all'), ""))))
-ggsave('chart2.pdf')
+  ggtitle(expression(atop('Papers containing "eradication" or "elimination"', 
+                          atop(italic('As % of all "malaria" papers, searching title/abstract only, retrieved from PubMed'), ""))))
+ggsave('pubmed2.pdf')

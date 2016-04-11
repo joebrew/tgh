@@ -1,14 +1,15 @@
 library(ggplot2)
 library(dplyr)
 library(RColorBrewer)
+library(ggthemes)
 
 # Approximation of timelines to eradication
 diseases <- 
-  c('Leish',
-    'HAT',
-    'LF',
-    'Chagas',
-    'Schisto',
+  c(#'Leish',
+#     'HAT',
+#     'LF',
+#     'Chagas',
+#     'Schisto',
     'Malaria')
 df <- data.frame(disease = rep(diseases, each = 100),
                  val = NA)
@@ -27,14 +28,16 @@ ggplot(data = df,
   facet_wrap(~disease, nrow = 3) +
   xlab('Perceived years until eradication') +
   ylab('Density') +
-  ggtitle('Perceptions of years until eradication')
+  ggtitle('Perceptions of years until eradication') +
+  theme_tufte()
+  ggsave('chart1.pdf')
 
 
 # Worker prestige and years to eradication
 x <- seq(0, 100, length = 1000)
 y <- seq(0, 50, length = 1000)
 y <- y + runif(n = 1000) + sample(seq(-10, 10, length = 1000))
-y[sample(1:1000, 400)] <- sample(seq(0, 50, length = 400))
+y[sample(1:1000, 400)] <- sample(seq(0, 70, length = 400))
 y[y < 0] <- 0
 df <- data.frame(quality = x,
                  years = y)
@@ -45,7 +48,9 @@ ggplot(data = df,
   geom_smooth() +
   xlab('Number of top-decile disease-related publications') +
   ylab('Perceived years to eradication') +
-  ggtitle('Correlation between researcher prestige and perception of years to eradication')
+  ggtitle('Correlation between researcher prestige and perception of years to eradication') +
+  theme_tufte()
+ggsave('chart2.pdf')
 
 # Obstacles by discipline and disease
 disciplines <- 
@@ -57,11 +62,11 @@ disciplines <-
     'Medicine')
 
 diseases <- 
-  c('Leish',
-    'HAT',
-    'LF',
-    'Chagas',
-    'Schisto',
+  c(#'Leish',
+#     'HAT',
+#     'LF',
+#     'Chagas',
+#     'Schisto',
     'Malaria')
 
 df <- expand.grid(discipline = disciplines,
@@ -74,16 +79,18 @@ ggplot(data = df,
   facet_wrap(~disease) +
   xlab('') +
   ylab('Percent perceiving eradication in < 10 years') +
-  ggtitle('Perception of likelihood of eradication by disease/discipline') +
+  ggtitle('Perception of likelihood of eradication by discipline') +
+  theme_tufte() +
   theme(axis.text.x = element_text(angle = 45, hjust = 1, vjust = 0.5))
+ggsave('chart3.pdf')
 
 # Obstacles by disease and area
 diseases <- 
-  c('Leish',
-    'HAT',
-    'LF',
-    'Chagas',
-    'Schisto',
+  c(#'Leish',
+#     'HAT',
+#     'LF',
+#     'Chagas',
+#     'Schisto',
     'Malaria')
 
 areas <- 
@@ -103,9 +110,12 @@ df <- expand.grid(disease = diseases,
                   area = areas)
 df$p <- sample(1:100,nrow(df))
 
-df <- df %>%
-  group_by(area) %>%
-  mutate(p = p / sum(p) * 100)
+# df <- df %>%
+#   group_by(area) %>%
+#   mutate(p = p / sum(p) * 100)
+
+df <- df %>% arrange(p)
+df$area <- factor(df$area, levels = df$area)
 
 ggplot(data = df,
        aes(x = area, y = p)) +
@@ -113,10 +123,10 @@ ggplot(data = df,
   facet_wrap(~disease) +
   xlab('') +
   ylab('Percent pointing to area as most important') +
-  ggtitle('Perception of area of greatest importance by disease') +
+  ggtitle('Perception of area of greatest importance') +
+  theme_tufte() +
   theme(axis.text.x = element_text(angle = 65, hjust = 1, vjust = 1))
-
-
+ggsave('chart4.pdf')
 
 
 # Obstacles by discipline and disease and principal area of importance
@@ -129,11 +139,11 @@ disciplines <-
     'Medicine')
 
 diseases <- 
-  c('Leish',
-    'HAT',
-    'LF',
-    'Chagas',
-    'Schisto',
+  c(#'Leish',
+#     'HAT',
+#     'LF',
+#     'Chagas',
+#     'Schisto',
     'Malaria')
 
 areas <- 
@@ -165,8 +175,10 @@ ggplot(data = df,
   facet_wrap(~disease) +
   xlab('') +
   ylab('Percent pointing to area as most important') +
-  ggtitle('Perception of area of greatest importance by disease and discipline') +
+  ggtitle('Perception of area of greatest importance and discipline') +
+  theme_tufte() +
   theme(axis.text.x = element_text(angle = 45, hjust = 1, vjust = 0.5)) +
   scale_fill_manual(name = 'Area of priority',
                     values = colorRampPalette(brewer.pal(n = 9, name = 'Spectral'))(length(unique(df$area))))
+ggsave('chart5.pdf')
 
