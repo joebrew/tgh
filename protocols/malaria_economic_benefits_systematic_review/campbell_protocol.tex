@@ -3,9 +3,10 @@
 \usepackage{style}
 
 
+\usepackage{Sweave}
 \begin{document}
 
-\SweaveOpts{concordance=TRUE}
+\input{campbell_protocol-concordance}
 
 \vspace{20mm}
 
@@ -141,19 +142,23 @@ This review has one \textbf{primary} objective: \\
 
 \noindent \textbf{Abstract keywords} The abstract of any included work must contain either the word "intervention" or "campaign", or one of the specific descriptors for an intervention:  
 
-<<eval=FALSE>>=
-'"insecticide-treated bed net" OR "bednet" OR "ITN" OR 
-"INDOOR RESIDUAL SPRAYING" OR "IRS" OR "MASS DRUG ADMINISTRATION" OR 
-"MDA" OR "larval control" OR "larvicide" OR "biological control" OR 
-"genetic modification" OR "area spraying" OR "fumigation" OR 
-"prophylaxis" OR "vaccine"'
-@
+\begin{Schunk}
+\begin{Sinput}
+> '"insecticide-treated bed net" OR "bednet" OR "ITN" OR 
++ "INDOOR RESIDUAL SPRAYING" OR "IRS" OR "MASS DRUG ADMINISTRATION" OR 
++ "MDA" OR "larval control" OR "larvicide" OR "biological control" OR 
++ "genetic modification" OR "area spraying" OR "fumigation" OR 
++ "prophylaxis" OR "vaccine"'
+\end{Sinput}
+\end{Schunk}
 
 Additionally, the abstract must contain at least one word pertaining to economic evaluation:
 
-<<eval=FALSE>>=
-'"economic" OR "effectiveness" OR "utility" OR "cost" OR "QALY" OR "DALY"'
-@
+\begin{Schunk}
+\begin{Sinput}
+> '"economic" OR "effectiveness" OR "utility" OR "cost" OR "QALY" OR "DALY"'
+\end{Sinput}
+\end{Schunk}
 
 \noindent \textbf{Filtering} After having retrieved all articles with the above search strategy, manual filtering will be applied to keep only those articles with health outcomes (as measured in likelihood [attack rate, incidence, etc.] and severity/duration of disease, for later translation to economic outcomes), or direct economic outcomes.
 
