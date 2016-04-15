@@ -19,34 +19,16 @@
 
 \begin{large}
 \begin{center}
-\textbf{Prepared for Pau Rubio, 15 April 2016}
+\textbf{Internal communiqué, prepared for Pau Rubio, 15 April 2016}
 \end{center}
 \end{large}
 
-
-
-\vspace{5mm}
-
-\begin{changemargin}{2.5cm}{2.5cm} 
-\begin{center}
-\begin{large}
-Joe Brew \hfill \emph{joe.brew@isglobal.org} \\
-Laia Cirera Crivillé \hfill \emph{laia.cirera@isglobal.org} \\ 
-Elisa Sicuri \hfill \emph{elisa.sicuri@isglobal.org} \\ 
-\end{large}
-\end{center}
-\end{changemargin}
-
-
-\vspace{6mm}
 
 
 
 \begin{changemargin}{3cm}{3cm} 
 
-\begin{center}
-\textbf{Summary}
-\end{center}
+
 
 \emph{What follows is a general and non-sytematic summary of some research evidence related to malaria's effect on student absenteeism, student economic achievement, worker absenteeism, and general economic outcomes}
 
