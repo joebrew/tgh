@@ -19,7 +19,7 @@ Background and research protocol
 
 \begin{large}
 \begin{center}
-\textbf{Can we do it? A systematic and reproducible survey of research professionals on the perceived feasibility of and obstacles to eliminating malaria using a “wisdom of crowds” approach} 
+\textbf{Can we do it? A survey of research professionals on the timeline and obstacles to eliminating malaria} 
 \end{center}
 \end{large}
 
@@ -61,7 +61,7 @@ Institut de Salut Global de Barcelona
 
 The World Health Organisation's Global Malaria Programme has acknowledged that it "needs to take an official position on how and under what timeline malaria eradication could be achieved" \cite{WHO2015}. Such a position could inform policy, and plays a crucial role in the economic analysis of the expected value of malaria control inteventions. \\
 
-\noindent However, no such position has been taken. Given the inherent incentives working against a realistic assessment of the matter at the individual level (funding prerogatives, political pressure, confirmation bias), the best way to assess the likelihood of and time-frame to malaria eradication is a reliance on the anonymous "wisdom of crowds." \\
+\noindent However, no such position has been taken. Given the inherent incentives working against a realistic assessment of the matter at the individual level (funding prerogatives, political pressure, confirmation bias), the best way to assess the likelihood of and time-frame to malaria eradication is a reliance on the anonymous "wisdom of crowds." Surveying experts, an approach already taken for assessing the time-frame to and chief innovations required for the eradication of some neglected tropical diseases \cite{Keenan2013}, can serve as a useful for barometer for filling measuring professional opinion. \\
 
 \noindent This study proposes to carry out a systematic survey of malaria research professionals from a wide array of academic disciplines in order to estimate the likelihood of and time-frame to malaria eradication. Its results can serve as a barometer of professional opinion, informing policy and guiding resources.
 
@@ -139,7 +139,7 @@ In recent years, researchers, public health agencies and funding organizations h
 \noindent Taking an official position is not easy, as it would require the synthesis of learnings from a diversity of fields.   Additionally, taking an official position faces the problem of human bias. Though it's easy to espouse intellectual honesty, leaders and well-known intellectuals in the space of global malaria control face perverse incentives. Funding prerogatives, political pressure and confirmation bias could all potentially serve to "inflate" the stated likelihood of eradication, and "deflate" the stated time-to-eradication. Furthermore, any states forecast exposes itself to the possibility of being incorrect, a reality which encourages stakeholders to embrace generalities and unquantified possibilities. \\
 
 
-\noindent But quantifying the likelihood of and time-frame to eradication is essential, and far too important to be left o individuals or small panels and committees. It requires the “wisdom of crowds.” Measuring consensus and discord among disease-specific researchers from a variety of disciplines can serve as a barometer of (informed) opinion, both guiding resources and identifying areas of concern. \\
+\noindent But quantifying the likelihood of and time-frame to eradication is essential, and far too important to be left o individuals or small panels and committees. It requires the “wisdom of crowds.” Measuring consensus and discord among disease-specific researchers from a variety of disciplines can serve as a barometer of (informed) opinion, both guiding resources and identifying areas of concern. Though the approach is atypical, it is feasible, having previously been undertaken for neglected tropical diseases with a surprisingly high response rate (44\%) \cite{Keenan2013}. \\
 
 
 \newpage

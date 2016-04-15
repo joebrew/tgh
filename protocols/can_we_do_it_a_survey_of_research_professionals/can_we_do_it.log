@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.11.13)  11 APR 2016 12:32
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.11.13)  14 APR 2016 13:26
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1295,7 +1295,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 119--120
 
  []
 
-[3] <pubmed2.pdf, id=150, 541.02126pt x 385.44pt>
+[3] <pubmed2.pdf, id=152, 541.02126pt x 385.44pt>
 File: pubmed2.pdf Graphic file (type pdf)
  <use pubmed2.pdf>
 Package pdftex.def Info: pubmed2.pdf used on input line 125.
@@ -1405,27 +1405,27 @@ Underfull \hbox (badness 10000) in paragraph at lines 231--232
 
  []
 
-<chart1.pdf, id=218, 541.02126pt x 385.44pt>
+<chart1.pdf, id=221, 541.02126pt x 385.44pt>
 File: chart1.pdf Graphic file (type pdf)
  <use chart1.pdf>
 Package pdftex.def Info: chart1.pdf used on input line 238.
 (pdftex.def)             Requested size: 344.005pt x 245.08691pt.
- [9 <./chart1.pdf>] <chart2.pdf, id=235, 541.02126pt x 385.44pt>
+ [9 <./chart1.pdf>] <chart2.pdf, id=238, 541.02126pt x 385.44pt>
 File: chart2.pdf Graphic file (type pdf)
  <use chart2.pdf>
 Package pdftex.def Info: chart2.pdf used on input line 246.
 (pdftex.def)             Requested size: 344.005pt x 245.08691pt.
- [10 <./chart2.pdf>] <chart3.pdf, id=253, 541.02126pt x 385.44pt>
+ [10 <./chart2.pdf>] <chart3.pdf, id=256, 541.02126pt x 385.44pt>
 File: chart3.pdf Graphic file (type pdf)
  <use chart3.pdf>
 Package pdftex.def Info: chart3.pdf used on input line 254.
 (pdftex.def)             Requested size: 344.005pt x 245.08691pt.
- [11 <./chart3.pdf>] <chart4.pdf, id=269, 541.02126pt x 385.44pt>
+ [11 <./chart3.pdf>] <chart4.pdf, id=272, 541.02126pt x 385.44pt>
 File: chart4.pdf Graphic file (type pdf)
  <use chart4.pdf>
 Package pdftex.def Info: chart4.pdf used on input line 262.
 (pdftex.def)             Requested size: 344.005pt x 245.08691pt.
- [12 <./chart4.pdf>] <chart5.pdf, id=285, 541.02126pt x 385.44pt>
+ [12 <./chart4.pdf>] <chart5.pdf, id=288, 541.02126pt x 385.44pt>
 File: chart5.pdf Graphic file (type pdf)
  <use chart5.pdf>
 Package pdftex.def Info: chart5.pdf used on input line 270.
@@ -1443,10 +1443,10 @@ Package rerunfilecheck Info: File `can_we_do_it.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 278.
  ) 
 Here is how much of TeX's memory you used:
- 19011 strings out of 494943
- 320220 string characters out of 6178510
- 515217 words of memory out of 5000000
- 21731 multiletter control sequences out of 15000+600000
+ 19013 strings out of 494943
+ 320247 string characters out of 6178510
+ 515267 words of memory out of 5000000
+ 21732 multiletter control sequences out of 15000+600000
  36260 words of font info for 73 fonts, out of 8000000 for 9000
  40 hyphenation exceptions out of 8191
  63i,13n,71p,1185b,509s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1461,10 +1461,10 @@ lic/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsf
 onts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/c
 m/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti
 12.pfb>
-Output written on can_we_do_it.pdf (15 pages, 274143 bytes).
+Output written on can_we_do_it.pdf (15 pages, 274888 bytes).
 PDF statistics:
- 370 PDF objects out of 1000 (max. 8388607)
- 309 compressed objects within 4 object streams
- 57 named destinations out of 1000 (max. 500000)
+ 373 PDF objects out of 1000 (max. 8388607)
+ 312 compressed objects within 4 object streams
+ 58 named destinations out of 1000 (max. 500000)
  231 words of extra memory for PDF output out of 10000 (max. 10000000)
 
