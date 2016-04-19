@@ -205,12 +205,24 @@ ggsave('pubmed2.pdf')
 ntds <- 
   pubmed(start_year = 1990,
          end_year = 2015,
-         search_topic = paste0('(onchocerciasis[Title/Abstract])'))
+         search_topic = paste0('(onchocerciasis[Title/Abstract])',
+                               ' OR (leishmaniasis[Title/Abstract])',
+                               ' OR (human african trypanosomiasis[Title/Abstract])',
+                               ' OR (lymphatic filariasis[Title/Abstract])',
+                               ' OR (chagas[Title/Abstract])',
+                               ' OR (schistosomiasis[Title/Abstract])',
+                               ' OR (oncocerchiasis[Title/Abstract])'))
 
 ntds_eradication <- 
   pubmed(start_year = 1990,
          end_year = 2015,
-         search_topic = paste0('(onchocerciasis[Title/Abstract])', 
+         search_topic = paste0('(onchocerciasis[Title/Abstract])',
+                               ' OR (leishmaniasis[Title/Abstract])',
+                               ' OR (human african trypanosomiasis[Title/Abstract])',
+                               ' OR (lymphatic filariasis[Title/Abstract])',
+                               ' OR (chagas[Title/Abstract])',
+                               ' OR (schistosomiasis[Title/Abstract])',
+                               ' OR (oncocerchiasis[Title/Abstract])', 
                                ' (AND (public-private partnership)',
                                ' OR (ppp)',
                                ' OR (pdp)',
@@ -250,7 +262,7 @@ g1 <- ggplot(data = combined %>%
   scale_fill_manual(values = c('darkgrey', 'red'),
                     name = '') +
   theme_bw() +
-  ggtitle(expression(atop('Papers containing "Onchocerciasis" in title/abstract: 1990-present', 
+  ggtitle(expression(atop('Papers containing NTDs in title/abstract: 1990-present', 
                           atop(italic("Retrieved from PubMed"), "")))) +
   theme(legend.position = 'bottom')
 ggsave('')
@@ -264,8 +276,8 @@ g2 <- ggplot(data = combined %>%
   xlab('Year') +
   ylab('Percentage') +
   theme_bw() +
-  ggtitle(expression(atop('Papers containing "eradication" or "elimination"', 
-                          atop(italic('As % of all "Onchocerciasis" papers, searching title/abstract only, retrieved from PubMed'), ""))))
+  ggtitle(expression(atop('Papers mentioning PPP in abstract', 
+                          atop(italic('As % of all NTDs papers, searching title/abstract only, retrieved from PubMed'), ""))))
 
 source('multiplot.R')
 multiplot(g1, g2)
