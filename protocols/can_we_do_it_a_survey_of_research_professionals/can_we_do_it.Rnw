@@ -103,11 +103,25 @@ In recent years, researchers, public health agencies and funding organizations h
 
 \noindent The economic case for striving to achieve malaria eradication is compelling \cite{Barofsky2015}. Though the case-specific marginal cost of prevention can be expected to be high (relative to a simple control approach), successful eradication would mean massive recurring savings in the long-term. However, to the extent that the case-specific marginal cost of prevention in an eradication campaign is high, estimating the likelihood of success is fundamental to the correct distribution of resources, particularly in low-income environments. \\
 
-\noindent In other words, the rational assignment of resources for malaria eradication campaigns hinges on the expected value of those campaigns. Expected value of eradication, $ E(X) $ should be a function of the probability of the campaign's success, $ P(O:1) $, the average cost per case prevented, $ \mu(C) $, the time-frame to eradication in years, $ Y $, the annual discount rate applied to future lives saved $ D $ (and associated cut-off for quantifying future benefits), and the associated opportunity cost (in health terms). \\
+\noindent In other words, the rational assignment of resources for malaria eradication campaigns hinges on the expected value of those campaigns. We can describe this relationship formulaically below: 
 
+\begin{center}
+\includegraphics[width=3in]{formula.png}
+\end{center}
 
-\[ E(X) = P(O:1) * \mu(C)(YT) \] \\
+\noindent Where:
+\begin{itemize}
+\item $ I $ is the return on investment
+\item $ m $ is the number of malaria cases
+\item $ x $ is the cut-off for a "successful campaign", ie the portion of eradication achieved
+\item $ T $ is the time-frame 
+\item $ P $ is the probability of success
+\item $ B $ is the benefit of preventing malaria
+\item $ C $ is the cost of preventing malaria
+\item $ \delta $ is the discount rate and opportunity cost
+\end{itemize}
 
+\noindent $ I $ is the return on investment at time (T) (the "end of malaria"). We take the present value of the benefits multiplied by the probability of succcess minus the value of costs times the probability of success, and multiplyboth terms by the discount rate traised to T to arrive at the return on investment. 
 
 \subsection*{The literature}
 \addcontentsline{toc}{subsection}{The literature}
