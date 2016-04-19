@@ -3,17 +3,16 @@
 \usepackage{style}
 
 
-\usepackage{Sweave}
 \begin{document}
 
-\input{campbell_protocol-concordance}
+\SweaveOpts{concordance=TRUE}
 
 \vspace{20mm}
 
 
 \begin{Huge}
 \begin{center}
-\textbf{Systematic Review Protocol: The microeconomic effect of malaria control interventions}
+\textbf{Systematic Review Protocol: Non-health outcomes of malaria control interventions}
 \end{center}
 \end{Huge}
 
@@ -47,7 +46,7 @@ Institut de Salut Global de Barcelona
 \textbf{Summary}
 \end{center}
 
-\emph{The literature regarding the economic effect of malaria control and prevention interventions on those targeted is scant, varies in terms of units and metrics, and stems from a diversity of times and locales. These factors make the comparison of different interventions difficult. By carrying out a systematic review of the available literature pertaining to the direct economic impact of malaria control and prevention activities, we will aggregate information to generate standardized measurements of interventions' effects, informing both the scientific discussion on malaria as well as public health practice.}
+\emph{The literature regarding the non-health effects of malaria control and prevention interventions on those targeted is scant, varies in terms of units and metrics, and stems from a diversity of times and locales. These factors make the comparison of different interventions difficult. By carrying out a systematic review of the available literature pertaining to the direct non-health impact of malaria control and prevention activities, we will aggregate information to generate standardized measurements of interventions' effects, informing both the scientific discussion on malaria as well as public health practice.}
 
 \end{changemargin}
 
@@ -59,10 +58,10 @@ Institut de Salut Global de Barcelona
 \subsection*{The issue}
 
 
-The economic effect of infection with malaria is poorly understood, but establishing the cost-effectiveness of malaria control interventions is crucial, particularly in light of the fact that malaria disproportionately impacts low-income countries. Though macro-level analyses suggest that a reduction in malaria's burden could be causally associated with increased economic growth \cite{Sachs2002}, the direct impact on worker productivity, income, and expenditure is unclear. \\
+The non-health outcomes of infection with malaria is poorly understood, but describing and quantifying the full spectrum of consequences of malaria control interventions is crucial, particularly in light of the fact that malaria disproportionately impacts low-income countries. Though macro-level analyses suggest that a reduction in malaria's burden could be causally associated with increased economic growth \cite{Sachs2002}, the direct impact on worker productivity, income, and expenditurem, along with education attainment, is unclear. \\
 
 
-\noindent Public health authorities are interested in quantifying the overall effect of malaria control on worker health, as measured in DALY's, QALY's, and other metrics of morbidity and mortality. But quantifying the short-term and direct impact of malaria infection (or, inversely, prevention) on a worker's productivity is a more useful and actionable metric for those who finance malaria control activities outside of the public sector, especially private firms. Much of the available literature on the topic of malaria's economic burden is either exclusively macroeconomic (overly general) \cite{Bloom2004} or narrowly understands costs to be only the value of work-time lost, as translated to worker wages (overly specific)\cite{Chima2003}. A critical and systematic review of available evidence on the totality of direct costs related to malaria and its control is sorely needed, and would serve not only to further the scientific discussion regarding the economics of malaria, but could inform the advisability and sustainability of interventions carried out by both the private and public sectors. 
+\noindent Public health authorities are interested in quantifying the overall effect of malaria control on worker health, as measured in DALY's, QALY's, and other metrics of morbidity and mortality. But quantifying the short-term and direct impact of malaria infection (or, inversely, prevention) on a worker's productivity or a student's absenteeism is a more useful and actionable metric for those who finance malaria control activities outside of the public sector, especially private firms. Much of the available literature on the topic of malaria's economic burden is either exclusively macroeconomic (overly general) \cite{Bloom2004} or narrowly understands costs to be only the value of work-time lost, as translated to worker wages (overly specific)\cite{Chima2003}. A critical and systematic review of available evidence on the totality of direct costs and non-health outcomes related to malaria and its control is sorely needed, and would serve not only to further the scientific discussion regarding the economics of malaria, but could inform the advisability and sustainability of interventions carried out by both the private and public sectors. 
 
 \subsection*{The interventions}
 
@@ -98,7 +97,7 @@ A systematic review of the literature on the direct economic impact of malaria c
 This review has one \textbf{primary} objective: \\ 
 
 \begin{itemize}
-\item Standardize, quantify and compare the direct economic impact of malaria control and prevention interventions on those targetted. \\
+\item Describe the existing evidence on non-health outcomes of malaria control and prevention interventions
 \end{itemize}
 
 
@@ -106,7 +105,7 @@ This review has one \textbf{primary} objective: \\
 \begin{itemize}
   \setlength\itemsep{-0.2em}
 
-
+\item Standardize, quantify and compare the direct economic impact of malaria control and prevention interventions on those targetted. 
 \item Provide an explanation for differing results over time and space 
 \item Translate all findings into "return on investment", so as to be of more interest to those in the private sector
 \item Create and document a framework for the replication of this review over time and for other diseases  
@@ -142,24 +141,21 @@ This review has one \textbf{primary} objective: \\
 
 \noindent \textbf{Abstract keywords} The abstract of any included work must contain either the word "intervention" or "campaign", or one of the specific descriptors for an intervention:  
 
-\begin{Schunk}
-\begin{Sinput}
-> '"insecticide-treated bed net" OR "bednet" OR "ITN" OR 
-+ "INDOOR RESIDUAL SPRAYING" OR "IRS" OR "MASS DRUG ADMINISTRATION" OR 
-+ "MDA" OR "larval control" OR "larvicide" OR "biological control" OR 
-+ "genetic modification" OR "area spraying" OR "fumigation" OR 
-+ "prophylaxis" OR "vaccine"'
-\end{Sinput}
-\end{Schunk}
+<<eval=FALSE>>=
+'"insecticide-treated bed net" OR "bednet" OR "ITN" OR 
+"INDOOR RESIDUAL SPRAYING" OR "IRS" OR "MASS DRUG ADMINISTRATION" OR 
+"MDA" OR "larval control" OR "larvicide" OR "biological control" OR 
+"genetic modification" OR "area spraying" OR "fumigation" OR 
+"prophylaxis" OR "vaccine"'
+@
 
-Additionally, the abstract must contain at least one word pertaining to either economic or educational outcomes:
+Additionally, the abstract must contain at least one word pertaining to educational or economic (non-health) outcomes:
 
-\begin{Schunk}
-\begin{Sinput}
-> '"economic" OR "effectiveness" OR "utility" OR "cost" OR "QALY" OR 
-+ "DALY" OR "productivity" OR "grades" OR "absenteeism" OR "wages"'
-\end{Sinput}
-\end{Schunk}
+<<eval=FALSE>>=
+'"productivity" OR "output" OR "grades" OR "absenteeism" OR 
+"wages" OR "education" OR "attainment" OR "achievement" OR 
+"literacy" OR "expenses" or "expenditure" "earnings"'
+@
 
 
 \noindent \textbf{Filtering} After having retrieved all articles with the above search strategy, manual filtering will be applied to keep only those articles with health outcomes (as measured in likelihood [attack rate, incidence, etc.] and severity/duration of disease, for later translation to economic outcomes), education outcomes (as measured in absenteeism and performance), or direct economic outcomes (as measured in productivity, earnings, or absenteeism).
