@@ -106,7 +106,8 @@ In recent years, researchers, public health agencies and funding organizations h
 \noindent In other words, the rational assignment of resources for malaria eradication campaigns hinges on the expected value of those campaigns. We can describe this relationship formulaically below: 
 
 \begin{center}
-\includegraphics[width=3in]{formula.png}
+% \includegraphics[width=3in]{formula.png}
+$I_{T}$ = $P(x)_{}$ $\dfrac{B(m_{})}{m_{}}$(1 + $\delta$)$^{T}$ -  $P(x)_{}$ $\dfrac{C(m_{})}{m_{}}$ (1 + $\delta$)$^{T}$
 \end{center}
 
 \noindent Where:

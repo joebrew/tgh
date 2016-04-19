@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.11.13)  19 APR 2016 09:34
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.11.13)  19 APR 2016 15:07
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1275,181 +1275,175 @@ Underfull \hbox (badness 10000) in paragraph at lines 105--106
 
  []
 
-<formula.png, id=115, 515.9275pt x 53.19875pt>
-File: formula.png Graphic file (type png)
- <use formula.png>
-Package pdftex.def Info: formula.png used on input line 110.
-(pdftex.def)             Requested size: 216.81pt x 22.35548pt.
-LaTeX Font Info:    Try loading font information for TS1+aer on input line 115.
-
+LaTeX Font Info:    Try loading font information for TS1+aer on input line 116.
 
 (/usr/share/R/share/texmf/tex/latex/ts1aer.fd
 File: ts1aer.fd 
 )
 LaTeX Font Info:    Font shape `TS1/aer/m/n' in size <10> not available
-(Font)              Font shape `TS1/cmr/m/n' tried instead on input line 115.
+(Font)              Font shape `TS1/cmr/m/n' tried instead on input line 116.
 
-Underfull \hbox (badness 10000) in paragraph at lines 131--132
+Underfull \hbox (badness 10000) in paragraph at lines 132--133
 
  []
 
-[3 <./formula.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 133--134
+[3]
+Underfull \hbox (badness 10000) in paragraph at lines 134--135
 
  []
 
 <pubmed2.pdf, id=144, 541.02126pt x 385.44pt>
 File: pubmed2.pdf Graphic file (type pdf)
  <use pubmed2.pdf>
-Package pdftex.def Info: pubmed2.pdf used on input line 139.
+Package pdftex.def Info: pubmed2.pdf used on input line 140.
 (pdftex.def)             Requested size: 344.01523pt x 216.80946pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 143--144
+Underfull \hbox (badness 10000) in paragraph at lines 144--145
 
  []
 
 [4 <./pubmed2.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 146--147
+Underfull \hbox (badness 10000) in paragraph at lines 147--148
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 154--155
+Underfull \hbox (badness 10000) in paragraph at lines 155--156
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 157--158
+Underfull \hbox (badness 10000) in paragraph at lines 158--159
 
  []
 
 [5]
-Underfull \hbox (badness 10000) in paragraph at lines 168--169
+Underfull \hbox (badness 10000) in paragraph at lines 169--170
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 170--171
+Underfull \hbox (badness 10000) in paragraph at lines 171--172
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 178--179
+Underfull \hbox (badness 10000) in paragraph at lines 179--180
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 193--194
+Underfull \hbox (badness 10000) in paragraph at lines 194--195
 
  []
 
 [6]
-Underfull \hbox (badness 10000) in paragraph at lines 196--197
+Underfull \hbox (badness 10000) in paragraph at lines 197--198
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 206--209
+Underfull \hbox (badness 10000) in paragraph at lines 207--210
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 210--211
+Underfull \hbox (badness 10000) in paragraph at lines 211--212
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 213--214
+Underfull \hbox (badness 10000) in paragraph at lines 214--215
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 216--217
+Underfull \hbox (badness 10000) in paragraph at lines 217--218
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 218--219
+Underfull \hbox (badness 10000) in paragraph at lines 219--220
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 221--224
+Underfull \hbox (badness 10000) in paragraph at lines 222--225
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 226--227
+Underfull \hbox (badness 10000) in paragraph at lines 227--228
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 229--230
+Underfull \hbox (badness 10000) in paragraph at lines 230--231
 
  []
 
 [7]
-Underfull \hbox (badness 10000) in paragraph at lines 231--232
+Underfull \hbox (badness 10000) in paragraph at lines 232--233
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 233--234
+Underfull \hbox (badness 10000) in paragraph at lines 234--235
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 235--236
+Underfull \hbox (badness 10000) in paragraph at lines 236--237
 
  []
 
 [8]
-Underfull \hbox (badness 10000) in paragraph at lines 245--246
+Underfull \hbox (badness 10000) in paragraph at lines 246--247
 
  []
 
 <chart1.pdf, id=223, 541.02126pt x 385.44pt>
 File: chart1.pdf Graphic file (type pdf)
  <use chart1.pdf>
-Package pdftex.def Info: chart1.pdf used on input line 252.
+Package pdftex.def Info: chart1.pdf used on input line 253.
 (pdftex.def)             Requested size: 344.005pt x 245.08691pt.
  [9 <./chart1.pdf>] <chart2.pdf, id=240, 541.02126pt x 385.44pt>
 File: chart2.pdf Graphic file (type pdf)
  <use chart2.pdf>
-Package pdftex.def Info: chart2.pdf used on input line 260.
+Package pdftex.def Info: chart2.pdf used on input line 261.
 (pdftex.def)             Requested size: 344.005pt x 245.08691pt.
  [10 <./chart2.pdf>] <chart3.pdf, id=258, 541.02126pt x 385.44pt>
 File: chart3.pdf Graphic file (type pdf)
  <use chart3.pdf>
-Package pdftex.def Info: chart3.pdf used on input line 268.
+Package pdftex.def Info: chart3.pdf used on input line 269.
 (pdftex.def)             Requested size: 344.005pt x 245.08691pt.
  [11 <./chart3.pdf>] <chart4.pdf, id=274, 541.02126pt x 385.44pt>
 File: chart4.pdf Graphic file (type pdf)
  <use chart4.pdf>
-Package pdftex.def Info: chart4.pdf used on input line 276.
+Package pdftex.def Info: chart4.pdf used on input line 277.
 (pdftex.def)             Requested size: 344.005pt x 245.08691pt.
  [12 <./chart4.pdf>] <chart5.pdf, id=290, 541.02126pt x 385.44pt>
 File: chart5.pdf Graphic file (type pdf)
  <use chart5.pdf>
-Package pdftex.def Info: chart5.pdf used on input line 284.
+Package pdftex.def Info: chart5.pdf used on input line 285.
 (pdftex.def)             Requested size: 344.005pt x 245.08691pt.
 
 [13 <./chart5.pdf>] (./can_we_do_it.bbl [14])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 292.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 293.
  [15]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 292.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 293.
  (./can_we_do_it.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 292.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 292.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 293.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 293.
 Package rerunfilecheck Info: File `can_we_do_it.out' has not changed.
 (rerunfilecheck)             Checksum: 12BE7793A03E9CDC62328E236AEB9E2A;667.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 292.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 293.
  ) 
 Here is how much of TeX's memory you used:
- 19042 strings out of 494943
- 320686 string characters out of 6178510
+ 19036 strings out of 494943
+ 320608 string characters out of 6178510
  515267 words of memory out of 5000000
- 21755 multiletter control sequences out of 15000+600000
+ 21751 multiletter control sequences out of 15000+600000
  36595 words of font info for 74 fonts, out of 8000000 for 9000
  40 hyphenation exceptions out of 8191
  63i,13n,71p,1185b,509s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1457,18 +1451,19 @@ Here is how much of TeX's memory you used:
 ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/tex
 mf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dis
 t/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/font
-s/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1
-/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public
-/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfont
-s/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr
-8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/
-share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/
-texmf/fonts/type1/public/cm-super/sfrm1000.pfb>
-Output written on can_we_do_it.pdf (15 pages, 285044 bytes).
+s/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1
+/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public
+/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfon
+ts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cm
+r7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><
+/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/s
+hare/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/t
+exlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texmf/f
+onts/type1/public/cm-super/sfrm1000.pfb>
+Output written on can_we_do_it.pdf (15 pages, 287450 bytes).
 PDF statistics:
- 379 PDF objects out of 1000 (max. 8388607)
- 316 compressed objects within 4 object streams
+ 382 PDF objects out of 1000 (max. 8388607)
+ 319 compressed objects within 4 object streams
  58 named destinations out of 1000 (max. 500000)
- 236 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 231 words of extra memory for PDF output out of 10000 (max. 10000000)
 

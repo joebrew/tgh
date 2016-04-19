@@ -26,13 +26,17 @@ pubmed <- function(start_year = 2000,
       message(paste0('Fetching records for year ', years[year]))
       
       # Perform search
-      search_query <- 
+      search_query <- try({ 
         EUtilsSummary(search_topic, 
                       db="pubmed", 
                       mindate=years[year], 
                       maxdate=years[year],
-                      retmax = 5000)
-      n <- QueryCount(search_query)
+                      retmax = 5000)})
+      if(inherits(search_query, 'try-error')){
+        n <- 0
+      } else {
+        n <- QueryCount(search_query)
+      }
       
       # Populate results dataframe
       return_object$n[year] <- n
@@ -195,3 +199,81 @@ ggplot(data = combined %>%
   ggtitle(expression(atop('Papers containing "eradication" or "elimination"', 
                           atop(italic('As % of all "malaria" papers, searching title/abstract only, retrieved from PubMed'), ""))))
 ggsave('pubmed2.pdf')
+
+# NTDs
+
+ntds <- 
+  pubmed(start_year = 1990,
+         end_year = 2015,
+         search_topic = paste0('(onchocerciasis[Title/Abstract])'))
+
+ntds_eradication <- 
+  pubmed(start_year = 1990,
+         end_year = 2015,
+         search_topic = paste0('(onchocerciasis[Title/Abstract])', 
+                               ' (AND (public-private partnership)',
+                               ' OR (ppp)',
+                               ' OR (pdp)',
+                               ' OR (public private))'))
+
+
+# Horizontally bind
+combined <- 
+  left_join(ntds_eradication %>%
+              rename(eradication = n),
+            ntds %>%
+              rename(ntds = n),
+            by = 'year') %>%
+  mutate(p = eradication / ntds * 100)
+
+# Rename to make more clear
+combined <- 
+  combined %>%
+  rename(`Mentions eradication or elmination` = eradication,
+         `General NTDs` = ntds)
+
+# Gather to make long
+combined <- gather(combined, 
+                   key, 
+                   value, `Mentions eradication or elmination`:p)
+
+# Visualize
+g1 <- ggplot(data = combined %>%
+         filter(key != 'p'),
+       aes(x = year,
+           y = value,
+           group = key,
+           fill = key)) +
+  geom_area() +
+  xlab('Year') +
+  ylab('Publications') +
+  scale_fill_manual(values = c('darkgrey', 'red'),
+                    name = '') +
+  theme_bw() +
+  ggtitle(expression(atop('Papers containing "Onchocerciasis" in title/abstract: 1990-present', 
+                          atop(italic("Retrieved from PubMed"), "")))) +
+  theme(legend.position = 'bottom')
+ggsave('')
+
+g2 <- ggplot(data = combined %>%
+         filter(key == 'p'),
+       aes(x = year, 
+           y = value)) +
+  geom_area(alpha = 0.6,
+            color = 'black') +
+  xlab('Year') +
+  ylab('Percentage') +
+  theme_bw() +
+  ggtitle(expression(atop('Papers containing "eradication" or "elimination"', 
+                          atop(italic('As % of all "Onchocerciasis" papers, searching title/abstract only, retrieved from PubMed'), ""))))
+
+source('multiplot.R')
+multiplot(g1, g2)
+
+# example for celine
+
+x <- 
+  pubmed(start_year = 2015,
+         end_year = 2015,
+         search_topic = paste0('(ntds[Title/Abstract])'),
+         counts_only = FALSE)
