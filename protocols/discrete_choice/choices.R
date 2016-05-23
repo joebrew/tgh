@@ -27,7 +27,7 @@ df <-
                   'mda'),
               effectiveness = 
                 c(25, 50, 75, 100),
-              nausea = 
+              side_effects = 
                 c('none', 'moderate', 'severe'),
               frequency = 
                 c(1, 2, 3),
@@ -35,7 +35,22 @@ df <-
                 c(0, 2, 5, 10),
               incidence = c(0, 30, 60))
 
+df <- df[sample(1:nrow(df)),]
+df <- df %>% arrange(alternative)
+df$choice_set <- rep(1:(0.5 * nrow(df)), 2)
+# df$choice_set <- rep(1:(nrow(df) * .5), each = 2)
+df <- df %>%
+  dplyr::select(choice_set, alternative, effectiveness,
+                side_effects, frequency, costs, incidence)
 
+# Example for protocol
+temp <- 
+  df %>%
+  filter(choice_set %in% c(25, 81, 215, 402)) %>%
+  arrange(choice_set)
+names(temp) <- Hmisc::capitalize(names(temp))
+names(temp) <- gsub('_', ' ', names(temp))
+readr::write_csv(temp, '~/Desktop/temp.csv')
 
 # FROM http://www.erim.eur.nl/fileadmin/user_upload/R_code_generic.txt
 # 
