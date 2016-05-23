@@ -46,11 +46,11 @@ df <- df %>%
 # Example for protocol
 temp <- 
   df %>%
-  filter(choice_set %in% c(25, 81, 215, 402)) %>%
+  # filter(choice_set %in% c(25, 81, 215, 402)) %>%
   arrange(choice_set)
 names(temp) <- Hmisc::capitalize(names(temp))
 names(temp) <- gsub('_', ' ', names(temp))
-readr::write_csv(temp, '~/Desktop/temp.csv')
+readr::write_csv(temp, 'example_choices.csv')
 
 # FROM http://www.erim.eur.nl/fileadmin/user_upload/R_code_generic.txt
 # 
