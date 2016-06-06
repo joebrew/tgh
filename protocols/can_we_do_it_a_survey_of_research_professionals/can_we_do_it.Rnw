@@ -12,7 +12,7 @@
 
 \begin{Large}
 \begin{center}
-Background and research protocol
+Expanded concept note
 \end{center}
 \end{Large}
 
@@ -69,13 +69,12 @@ The World Health Organisation's Global Malaria Programme has acknowledged that i
 
 \section*{Structure}
 
-This document is divided into three sections:
+This document is divided into two sections:
 \vspace{-3mm}
 
 \begin{enumerate}
   \setlength\itemsep{-0.5em}
 \item A background, which provides a justification for the proposal and situates this research within the relevant literature, while also outlining the history and current "état de l'art" of global discourse on malaria control and eradication
-\item A proposed protocol for review by and approval of the ISGlobal scientific committee
 \item Hypothetical examples of visual "knowledge products" to be generated from this research
 \end{enumerate}
 
@@ -91,23 +90,29 @@ This document is divided into three sections:
 \addcontentsline{toc}{section}{Part 1: Background}
 
 
-\subsection*{Context}
-\addcontentsline{toc}{subsection}{Context}
 
-In recent years, researchers, public health agencies and funding organizations have become increasingly interested in transitioning from an approach of malaria "control" to one of "elimination" and "eradication" \cite{Tanner2015}. Even in areas of high endemicity, advances in immunology, parasitology, modeling and vaccinology, along with rapid economic development, have made eradication appear a more feasible goal, even if not possible in the immediate short term \cite{Snow2015, Eckhoff2014}.  \\
+\noindent \textbf{The wisdom of crowds:} Patients often ask for a “second opinion”, a request which implicitly recognizes two important truths: (1) that an expert can sometimes be wrong and (2) that the combined opinions of multiple experts can better approximate the truth than the opinion of only one. As Sir Francis Galton demonstrated in his famous ox-weight experiment published in Nature1, averaging the opinions of many is more accurate than taking the opinion of any single expert, since the biases of diverse viewpoints can be complementary and symbiotic. \\
+
+\noindent \textbf{The value of forecasting:} In regards to disease eradication, proponents point to the potential ongoing returns on investment to future generations. But economically, the “expected value” of an investment in a binary scenario (eradication or not) is a function of the probability of the scenario’s occurrence, and the temporal lag of that occurrence. Therefore, knowing the likelihood and time-frame of eradication of malaria is essential for making sound investments in health. \\
+
+
+\noindent \textbf{Context:} In recent years, researchers, public health agencies and funding organizations have become increasingly interested in transitioning from an approach of malaria "control" to one of "elimination" and "eradication" \cite{Tanner2015}. Even in areas of high endemicity, advances in immunology, parasitology, modeling and vaccinology, along with rapid economic development, have made eradication appear a more feasible goal, even if not possible in the immediate short term \cite{Snow2015, Eckhoff2014}.  \\
+
+
+\noindent \textbf{Why this study:} Assessing likelihood and time-frame of eradication is too important of a task to be left to individuals or small panels and committees. It requires the “wisdom of crowds.” Measuring consensus and discord among disease-specific researchers from a variety of disciplines can serve as a barometer of (informed) opinion, both guiding resources and identifying areas of concern.
 
 
 \subsection*{Justification}
 \addcontentsline{toc}{subsection}{Justification}
 
 
-\noindent The economic case for striving to achieve malaria eradication is compelling \cite{Barofsky2015}. Though the case-specific marginal cost of prevention can be expected to be high (relative to a simple control approach), successful eradication would mean massive recurring savings in the long-term. However, to the extent that the case-specific marginal cost of prevention in an eradication campaign is high, estimating the likelihood of success is fundamental to the correct distribution of resources, particularly in low-income environments. \\
+\noindent The economic case for striving to achieve malaria eradication is compelling \cite{Barofsky2015}. Though the case-specific marginal cost of elimination can be expected to be high (relative to a simple control approach), successful eradication would mean massive recurring savings in the long-term \cite{Barrett2013}. However, to the extent that the case-specific marginal cost of prevention in an eradication campaign is high, estimating the likelihood of success is fundamental to the correct distribution of resources, particularly in low-income environments. \\
 
 \noindent In other words, the rational assignment of resources for malaria eradication campaigns hinges on the expected value of those campaigns. We can describe this relationship formulaically below: 
 
 \begin{center}
 % \includegraphics[width=3in]{formula.png}
-$I_{T}$ = $P(x)_{}$ $\dfrac{B(m_{})}{m_{}}$(1 + $\delta$)$^{T}$ -  $P(x)_{}$ $\dfrac{C(m_{})}{m_{}}$ (1 + $\delta$)$^{T}$
+$I_{T}$ = $P(x)_{}$ $\dfrac{B(m_{})}{m_{}}$(1 + $\delta$)$^{-T}$ -  $P(x)_{}$ $\dfrac{C(m_{})}{m_{}}$ (1 + $\delta$)$^{-T}$
 \end{center}
 
 \noindent Where:
@@ -115,7 +120,7 @@ $I_{T}$ = $P(x)_{}$ $\dfrac{B(m_{})}{m_{}}$(1 + $\delta$)$^{T}$ -  $P(x)_{}$ $\d
 \item $ I $ is the return on investment
 \item $ m $ is the number of malaria cases
 \item $ x $ is the cut-off for a "successful campaign", ie the portion of eradication achieved
-\item $ T $ is the time-frame 
+\item $ T $ is the time-frame (to both costs and benefits)
 \item $ P $ is the probability of success
 \item $ B $ is the benefit of preventing malaria
 \item $ C $ is the cost of preventing malaria
@@ -151,25 +156,10 @@ $I_{T}$ = $P(x)_{}$ $\dfrac{B(m_{})}{m_{}}$(1 + $\delta$)$^{T}$ -  $P(x)_{}$ $\d
 \addcontentsline{toc}{subsection}{The need for the wisdom of crowds}
 
 
-\noindent Taking an official position is not easy, as it would require the synthesis of learnings from a diversity of fields.   Additionally, taking an official position faces the problem of human bias. Though it's easy to espouse intellectual honesty, leaders and well-known intellectuals in the space of global malaria control face perverse incentives. Funding prerogatives, political pressure and confirmation bias could all potentially serve to "inflate" the stated likelihood of eradication, and "deflate" the stated time-to-eradication. Furthermore, any states forecast exposes itself to the possibility of being incorrect, a reality which encourages stakeholders to embrace generalities and unquantified possibilities. \\
+\noindent Taking an official position is not easy, as it would require the synthesis of learnings from a diversity of fields.   Additionally, taking an official position faces the problem of political pressures. Though it's easy to espouse intellectual honesty, leaders and well-known intellectuals in the space of global malaria control face perverse incentives. Funding prerogatives, political pressure and confirmation bias could all potentially serve to "inflate" the stated likelihood of eradication, and "deflate" the stated time-to-eradication. Furthermore, any states forecast exposes itself to the possibility of being incorrect, a reality which encourages stakeholders to embrace generalities and unquantified possibilities. \\
 
 
 \noindent But quantifying the likelihood of and time-frame to eradication is essential, and far too important to be left o individuals or small panels and committees. It requires the “wisdom of crowds.” Measuring consensus and discord among disease-specific researchers from a variety of disciplines can serve as a barometer of (informed) opinion, both guiding resources and identifying areas of concern. Though the approach is atypical, it is feasible, having previously been undertaken for neglected tropical diseases with a surprisingly high response rate (44\%) \cite{Keenan2013}. \\
-
-
-\newpage
-\section*{Part 2: Protocol}
-\addcontentsline{toc}{section}{Part 2: Protocol}
-
-
-\subsection*{Background}
-\addcontentsline{toc}{subsection}{Background}
-
-\noindent \textbf{The wisdom of crowds:} Patients often ask for a “second opinion”, a request which implicitly recognizes two important truths: (1) that an expert can sometimes be wrong and (2) that the combined opinions of multiple experts can better approximate the truth than the opinion of only one. As Sir Francis Galton demonstrated in his famous ox-weight experiment published in Nature1, averaging the opinions of many is more accurate than taking the opinion of any single expert, since the biases of diverse viewpoints can be complementary and symbiotic. \\
-
-\noindent \textbf{The value of forecasting:} In regards to disease eradication, proponents point to the potential ongoing returns on investment to future generations. But economically, the “expected value” of an investment in a binary scenario (eradication or not) is a function of the probability of the scenario’s occurrence, and the temporal lag of that occurrence. Therefore, knowing the likelihood and time-frame of eradication of malaria is essential for making sound investments in health. \\
-
-\noindent \textbf{Why this study:} Assessing likelihood and time-frame of eradication is too important of a task to be left to individuals or small panels and committees. It requires the “wisdom of crowds.” Measuring consensus and discord among disease-specific researchers from a variety of disciplines can serve as a barometer of (informed) opinion, both guiding resources and identifying areas of concern.
 
 \subsection*{Objectives}
 \addcontentsline{toc}{subsection}{Objectives}
@@ -198,49 +188,9 @@ We will “webscrape” from PubMed the authors, abstracts, and journal informat
 
 \noindent The design of this study is typical, but this study is noteworthy in two areas: (1) its scale (by using automated web-scraping, emailing, and surveying, we will reach the maximum number of experts), and (2) its democratic approach (we assume that the more experts’ opinions reflected, the closer we are to approximating the “truth”). Our results will be of value not only to the scientific community, but also to policy-makers and public health practitioners. By gauging and synthesizing the “wisdom of (informed) crowds”, we aim to establish a barometer of scientific opinion in a manner that is fully reproducible.
 
-
-\subsection*{Evaluation criteria}
-\addcontentsline{toc}{subsection}{Evaluation criteria}
-
-
-\noindent \textbf{1. What are the ethical considerations that need to be addressed and how will they be addressed?} \\
-We will not be collecting personal health information, or any biological samples. Nor will we be dealing in any way, shape or form with health outcomes or treatment data.
-We will only contact researchers whose information is publicly available online.   \\
-
-\noindent The only potential area of “sensitive” information pertains to the disclosure of researchers’ opinions. However, we will state clearly in both the “invitation to participate” email as well as in the online survey form that results will be made fully public; researchers who choose not to participate are free to do so, and will not be contacted thereafter.  \\
-
-
-\noindent \textbf{2. List the ethics committees (both human and/or animal) which either have reviewed or will review this proposal.} \\
-
-
-\noindent None. Given the nature of this study, no human/animal ethics committees’ review is necessary. \\
-
-\noindent \textbf{3. Describe the expertise required for the project and which member(s) of the research team will provide each area of expertise.} \\
-
-
-\noindent Area expertise in malaria: Elisa Sicuri and Joe Brew \\
-\noindent Area expertise in economic evaluation: Elisa Sicuri \\
-\noindent Area expertise in computer-assisted article retrieval and surveying: Joe Brew \\
-
-
-\noindent \textbf{4. How does the proposal fit in with ISGlobal’s scientific agenda?} \\ 
-
-
-\noindent ISGlobal is a thought leader in malaria, as well as its corresponding eradication movement. By using modern, technologically-oriented means to establish a “barometer” of international researcher consensus on the perceived feasibility and time-frame of eradication, ISGlobal would cement its position at the center of the ongoing international dialogue on the subject. Furthermore, given ISGlobal’s stake in eradication campaigns, the results of this study could (a) inform which disciplines and diseases have the most “research gaps” to be filled in order to achieve eradication, (b) identify areas of consensus and discord between different disciplines, (c) provide (crowd-informed) estimates of the timeline to eradication. \\
-
-\noindent \textbf{Budget estimation and expected source of funding for this study.} \\
-
-\noindent None. Given that this topic is directly relevant to the PhD-specific research of the researcher (Joe Brew), no project-specific funding is required. \\
-
-\noindent \textbf{Other comments} \\
-
-\noindent Have all co-investigators read and approved this proposal? NO \\
-\noindent Do you expect to handle samples of human origin in the study? NO \\
-\noindent Do you expect to handle personal information in the study? NO. 
-
 \newpage 
-\section*{Part 3: Knowledge products}
-\addcontentsline{toc}{section}{Part 3: Knowledge products}
+\section*{Part 2: Knowledge products}
+\addcontentsline{toc}{section}{Part 2: Knowledge products}
 
 The below are examples of \emph{hypothetical} knowledge products that could emerge from this resarch. \\
 
