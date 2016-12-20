@@ -1,0 +1,125 @@
+---
+title: "The investment case for malaria elimination"
+output:
+  brew::ramona:
+    highlight: kate
+---
+
+```{r knitr_init, echo=FALSE, cache=FALSE}
+library(knitr)
+library(rmdformats)
+
+## Global options
+options(max.print="75")
+opts_chunk$set(echo=FALSE,
+	             cache=TRUE,
+               prompt=FALSE,
+               tidy=TRUE,
+               comment=NA,
+               message=FALSE,
+               warning=FALSE)
+opts_knit$set(width=75)
+```
+
+# Introduction
+
+The cost of malaria elimination is relatively straightforward. Regardless of the strategies involved, materials must be purchased, transported and distributed, data must be collected and stored, and workers must be trained and salaried. 
+
+  Outlining the _investment case for malaria eradication_, however, is an exercise that goes well beyond a simple summation of costs. The _benefits_ of elimination, unlike the costs, are not straightforward. A distinction must be made between those benefits which are direct and indirect, personal and societal, economic and financial. Additionally, and of equal importance, are the dimensions of time (how one values future benefits) and opportunity cost
+  
+  This report strives to provide a basic framework for establishing a line of research which, if carried out to its full extent, will make a data-driven investment case for malaria elimination.
+  
+# Quantifying costs
+
+Clearly establishing program cost is a necessity for making an investment case for elimination.
+
+## Defining principal
+
+The first step to making an investment case for malaria elimination is to clearly establish the _principal_, ie the amount invested. This exercise, commonly referred to as "costing" in the health sciences, uses straightforward arithmetic to establish costs. The costs can be "in-kind", direct, indirect, financial, and economic. Though the scope here can be intentionally expanded or limited depending on the specific case to be established (ie, whether the point of view is that of a government, external funder, private agency, etc.), a comprehensive investment case would take the sum of _all_ costs, regardless of type.
+
+## Adjusting scope
+
+Costs can be go beyond those incurred by the program. There are also costs in health (medicinal side effects, pollution generated from transportation activity), and operational opportunity costs (ie, diminished lab capacity for non-elimination activities, etc.). These kinds of costs are often complex to calculate, and require a reliance on literature and previous studies. 
+
+## Translating to a real-world context
+
+The exercise of "costing" should be as granular and detailed as possible, so that it can be extrapolated to other contexts. Ultimately, all costs - even those which are in health, opportunity, or other less tangible units - must be converted into monetary figures. Doing so not only helps to establish a clear "principal" invested, but also avoids the all-too-common trap of inflating the return while masking many true (but difficult to quantify) costs.
+
+
+# Quantifying return
+
+An investment case can ultimately be simplified into two numbers: 
+
+1. The _prinicipal_ (discussed in the previous section).
+
+2. The _return_.
+
+Quantifying the latter involves three steps which must be carried out _a priori_. These steps should not be taken in isolation, but rather in communication with (and as a function of) the steps for quantifying costs, since an investment case must ultimately be fair in its scope.
+
+## Stakeholder identification
+
+The first step in quantifying return is the identification of stakeholders. Unlike much discourse in health research, here we do not mean those who will benefit from or participate in elimination. Rather, we mean _those whom we consider eligible to benefit_, and for whom, therefore, we can calculate improvements in weath or health. 
+
+In the specific context of malaria elimination, these stakeholders can be understood first and foremost as those who are living in malaria endemic zones. These primary stakeholders' improvements in health (and corresponding improvements in social and economic indicators) will account for the bulk of what can eventually be defined as "return".
+
+Secondary stakeholders can be considered those institutions, organizations, and individuals who will benefit indirectly from the improvements of the primary stakeholders. This wide-ranging area could include anything from business owners (a healthier population means a more economically active popuation), to educators.
+
+Tertiary stakeholders can be those considered to benefit directly from elimination activities, but not necessarily from elimination itself. This area constitues a relatively small portion of the "benefit" part of the investment case equation, but should still be taken into account. It includes, for example, elimination campaign employees and those vendors who contract with elimination campaigns.
+
+## Time parameterization
+
+One of the more complex exercises of making an investment case is the parametrization of time. In order to do this correctly, one must define not only (a) a threshold at which time benefits can no longer be incurred and counted, and (b) a "discount rate", ie the extent to which a benefit's value goes down if incurred in the future rather than the present.
+
+Thresholding and discounting are essential to a fair investment case. In the case of elimination, benefits can be expected to be recurring. However, establishing a threshold which is too far into the future increases the uncertainty surrounding the point estimate for the return on investment.
+
+## Scope delineation
+
+The scope of what counts as a "return" must be delineated _a priori_. The financial returns of malaria elimination, for example, will likely pale in comparison to the economic returns. By the same token, returns in education or productivity, though difficult to quantify, may overshadow returns in health, which are much more easy to quantify.
+
+Scope delineation is a natural extension of the exercise of identifying stakeholders. It involves reflection on what the expected results are, what a "positive" return looks like, how to define and recognize a counterfactual (ie, control), and where to draw the line in terms of areas to be taken into study.
+
+# Application to MALTEM
+
+In the specific context of MALTEM, the case for malaria elimination can be made on the same axes (costs and return) and components establish in the previous two sections). The MALTEM economic studies, currently being carried out, will generate evidence to address all 6 components, enabling the estimation of both the principal and return, from the perspective of various stakeholders, and under a variety of different scenarios.
+
+## Quantifying costs
+
+### Defining principal
+
+This exercise is already being carried out. Using best practices established in the literature, and in full collaboration with CISM and MALTEM colleagues, Laia Cirera is documenting the costs of elimination and their respective types.
+
+### Adjusting scope
+
+Scope, in the case of MALTEM, is relatively straightforward. Costs are those incurred by the program, as well as those incurred by those who participate in the program (ie, recipients of interventions). Negative events (side effects, etc.) will be quantified and converted to QALYs and DALYs per WHO best practices, and will be assigned a monetary value in conjunction with health expenditures relevant to the Mozambican context.
+
+### Translating to a real-world context
+
+The granularity with which the exercise of costing is being carried out will allow for estimation of costs across a variety of contexts. Though those institutions which most closely resemble the CISM and MoH will benefit most from the MALTEM experience, the segregation of cost types will allow alternative insitutions (private organizations, NGOs, etc.) to estimate costs as well.
+
+
+## Quantifying return
+
+The MALTEM economic studies are currently collecting the data necesary for the full quantification of the "return" on investment in malaria elimination.
+
+### Stakeholder identification
+
+Stakeholders have been identified as (a) residents of the intervention area with prevented illness, (b) institutions and individuals who live and are affected by general condiitons in the intervention area, and (c) organizations and individuals participating in the interventions themselves.
+
+In order to ensure that the "return" is comprehensive enough to include those who benefit indirectly, the MALTEM economics team will aggregate data not only from epidemiological sources (ie, cases averted, severity of cases, etc.), but also from social institutions (schools) and private industry (sugarcane factories). 
+
+### Time parameterization
+
+The MALTEM economics team recommends a straightforward approach to time parameterization. 10 years of benefits threshold with a discount rate of 3%.
+
+### Scope delineation
+
+Scope is intentionally broad, but within reasonable bounds. The financial benefits will be assessed through ongoing sociodemographic surveillance (census). Economic benefits will be assessed through data collection from private industry. Social benefits will be assessed through data collection from schools. Once data collection is finished, financial, economic and social benefits will be combined with relevant sources in the literature to estimate increases in productivity in both the medium and long-term, thereby translating improvements in academic outcomes, or increases in productivity, into monetary figures.
+
+# Contact
+
+Laia Cirera
+
+Centro de Investigação em Saude de Manhiça
+
+Rua Cambeve 12. Manhiça, Mozambique
+

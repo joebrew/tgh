@@ -1,0 +1,32 @@
+---
+title: "Title goes here"
+date: "`r Sys.Date()`"
+output:
+  brew::ramona:
+    highlight: kate
+---
+
+
+```{r knitr_init, echo=FALSE, cache=FALSE}
+library(knitr)
+library(rmdformats)
+
+## Global options
+options(max.print="75")
+opts_chunk$set(echo=FALSE,
+	             cache=TRUE,
+               prompt=FALSE,
+               tidy=TRUE,
+               comment=NA,
+               message=FALSE,
+               warning=FALSE)
+opts_knit$set(width=75)
+```
+
+# Abstract
+
+The cost of malaria elimination is relatively straightforward. Regardless of the strategies involved, materials must be purchased, transported and distributed, data must be collected and stored, and workers must be trained and salaried. 
+
+  Outlining the _investment case for malaria eradication_, however, is an exercise that goes well beyond a simple summation of costs. The _benefits_ of elimination, unlike the costs, are not straightforward. A distinction must be made between those benefits which are direct and indirect, personal and societal, economic and financial. Additionally, and of equal importance, are the dimensions of time (how one values future benefits) and opportunity cost
+  
+  This report strives to provide a basic framework for establishing a line of research which, if carried out to its full extent, will make a data-driven investment case for malaria elimination.
